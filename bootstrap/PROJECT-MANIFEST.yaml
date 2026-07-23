@@ -17,6 +17,11 @@ repository:
   strategy: repository-first
   source_of_truth: Enterprise Knowledge Repository
 
+quality_governance:
+  framework: GOV-QMF-001
+  gate_register: docs/governance/quality/QUALITY-GATE-REGISTER.md
+  release_gate: QG-004
+
 current_sprint:
   id: WS-001
   name: Enterprise Semantic Foundation
