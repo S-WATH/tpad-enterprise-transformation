@@ -1,5 +1,33 @@
 project:
+  id: TPAD
   name: TPAD Enterprise Transformation Program
-  baseline: BR-1.0
   checkpoint: CP-004
+  baseline: BR-1.0
   phase: Enterprise Engineering
+
+foundation:
+  - PC-001
+  - EA-001
+  - EA-002
+  - EA-003
+  - STD-001
+  - REG-001
+
+repository:
+  strategy: repository-first
+  source_of_truth: Enterprise Knowledge Repository
+
+current_sprint:
+  id: WS-001
+  name: Enterprise Semantic Foundation
+
+deliverables:
+  - GLO-001 Enterprise Glossary v0.1
+
+rules:
+  - standard-first
+  - repository-first
+  - value-first
+  - minimal-foundation
+  - no-document-without-object
+  - no-object-without-business-value
