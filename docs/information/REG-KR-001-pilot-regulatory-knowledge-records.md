@@ -3,7 +3,7 @@ id: REG-KR-001
 title: Pilot Regulatory Knowledge Records — Air Navigation Act
 type: information
 status: draft
-version: 0.2.0
+version: 0.3.0
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
 created: 2026-08-20
@@ -31,7 +31,7 @@ Primary source:
 
 `พระราชบัญญัติการเดินอากาศ พ.ศ. 2497 และที่แก้ไขเพิ่มเติมจนถึงฉบับที่ 14 (Consolidated Text)`
 
-The project-provided consolidated text is the source of record. Provision verification is recorded only where the current source search provides sufficient section-level evidence.
+The project-provided consolidated text is the source of record. Provision verification is recorded only where the current source evidence provides sufficient section-level evidence.
 
 ## 3. Record Model
 
@@ -61,13 +61,13 @@ Evidence / Verification Status
 | Source | Air Navigation Act B.E. 2497 consolidated text |
 | Source family | Thai aviation law |
 | Knowledge role | Regulation / Requirement context |
-| Provision target | Director-prescribed requirements; exact provision retained as pilot target |
+| Provision target | Director-prescribed requirements; exact provision not established |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `PARTIALLY VERIFIED — EXACT SUBORDINATE REQUIREMENT NOT IDENTIFIED` |
+| Verification status | `PENDING — EXACT PROVISION NOT IDENTIFIED` |
 
-**Source-derived assertion:** The Act contains provisions under which requirements may be prescribed by the Director. The current source evidence also shows provisions where the Director sets criteria, qualifications, procedures, or conditions by prescribed requirements.
+**Verification result:** The source contains multiple provisions under which the Director may determine criteria, conditions, procedures, or other requirements. The current source evidence does not establish a single provision that can safely be used as the exact citation for the generic pilot assertion “Director Requirements”.
 
-**Control boundary:** The existence of a Director-prescribed requirement does not by itself establish its content, applicability, or TPAD obligation.
+**Control boundary:** No generic Director-prescribed requirement is represented as a reusable evidence-complete record until its exact provision is identified.
 
 ### REG-KR-001-002 — Documents Required for Flight
 
@@ -77,18 +77,17 @@ Evidence / Verification Status
 | Source | Air Navigation Act B.E. 2497 consolidated text |
 | Source family | Thai aviation law |
 | Knowledge role | Legal Obligation |
-| Provision target | Pilot record target retained; exact provision citation not established in this verification pass |
+| Provision target | Pilot record target retained; exact provision citation not established |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `PENDING — EXACT PROVISION TEXT/CITATION RETRIEVAL` |
+| Verification status | `PENDING — EXACT PROVISION TEXT/CITATION NOT RETRIEVED` |
 
-**Source-derived assertion:** The pilot corpus identifies a statutory requirement concerning documents to be carried or available with an aircraft for flight, subject to the conditions and exceptions in the Act.
+**Verification result:** The current source-search evidence does not expose sufficient provision-level text to establish the exact citation for the pilot assertion concerning documents to be carried or available with an aircraft for flight.
 
-**Evidence boundary:** The current source-search evidence retrieved for this verification cycle does not expose the complete text needed to establish the exact provision citation. Therefore the record is not promoted to evidence-complete status and no citation is inferred.
+**Control boundary:** No citation is inferred and the record is not promoted to evidence-complete status.
 
 ### REG-KR-001-003 — Airworthiness / No-Fly Conditions
 
 | Field | Value |
-|---|---|
 |---|---|
 | Identifier | REG-KR-001-003 |
 | Source | Air Navigation Act B.E. 2497 consolidated text |
@@ -98,7 +97,7 @@ Evidence / Verification Status
 | TPAD applicability | `UNASSESSED` |
 | Verification status | `VERIFIED — SECTION-LEVEL` |
 
-**Source-derived assertion:** Section 41/88 states that where the aircraft controller considers the aircraft not capable of safe flight, the aircraft maintenance engineer must be notified to restore the aircraft to a safe-flight condition before flight. Section 41/89 prohibits flight in specified conditions, including absence or loss/suspension of an airworthiness certificate and other listed conditions.
+**Source-derived assertion:** Section 41/88 addresses restoration of an aircraft to a safe-flight condition before flight when the aircraft is considered unsafe for flight. Section 41/89 prohibits flight in specified conditions, including circumstances involving the airworthiness certificate.
 
 The project source explicitly identifies these provisions. fileciteturn74file11
 
@@ -116,7 +115,7 @@ The project source explicitly identifies these provisions. fileciteturn74f
 | TPAD applicability | `UNASSESSED` |
 | Verification status | `VERIFIED — SECTION-LEVEL` |
 
-**Source-derived assertion:** Section 41/93 states that operating a maintenance organisation in Thailand requires a maintenance-organisation certificate and distinguishes three certificate types: aircraft maintenance, major aircraft components, and aircraft equipment/parts. Section 41/94 prohibits operation of a maintenance organisation without the required certificate from the Director.
+**Source-derived assertion:** Section 41/93 addresses the requirement for a maintenance-organisation certificate and distinguishes three certificate types. Section 41/94 prohibits operation of a maintenance organisation without the required certificate from the Director.
 
 The project source explicitly identifies sections 41/93 and 41/94 and the three certificate types. fileciteturn78file5
 
@@ -134,35 +133,32 @@ The project source explicitly identifies sections 41/93 and 41/94 and the three 
 | TPAD applicability | `UNASSESSED` |
 | Verification status | `VERIFIED — SECTION-LEVEL FOR SECURITY-PLAN FRAMEWORK` |
 
-**Source-derived assertion:** Section 50/16 establishes the National Civil Aviation Security Plan and requires CAAT to prepare it as a framework for aviation security and prevention of unlawful interference. Section 50/27 identifies the national security plan, national security training plan, national security quality-control plan, and airport security plan as part of the security framework.
+**Source-derived assertion:** Section 50/16 establishes the National Civil Aviation Security Plan and section 50/27 identifies national security plans and related security-plan elements within the security framework.
 
-The source also contains provisions concerning security plans for specific aviation actors, including air operators and air traffic service providers. fileciteturn72file18 fileciteturn73file2
+The source also contains provisions concerning security plans for specific aviation actors. fileciteturn72file18 fileciteturn73file2
 
 **Control boundary:** This record does not establish a TPAD security-plan obligation without a separate applicability assessment.
 
-## 5. Evidence Status Summary
+## 5. Final Evidence Verification Status
 
-| Record | Verification state |
+| Record | Final verification state |
 |---|---|
-| REG-KR-001-001 | Partially verified — subordinate requirement not identified |
-| REG-KR-001-002 | Pending exact provision retrieval |
-| REG-KR-001-003 | Verified — sections 41/88 and 41/89 |
-| REG-KR-001-004 | Verified — sections 41/93 and 41/94 |
-| REG-KR-001-005 | Verified — security-plan framework sections |
+| REG-KR-001-001 | **Pending — exact provision not identified** |
+| REG-KR-001-002 | **Pending — exact provision text/citation not retrieved** |
+| REG-KR-001-003 | **Verified — sections 41/88 and 41/89** |
+| REG-KR-001-004 | **Verified — sections 41/93 and 41/94** |
+| REG-KR-001-005 | **Verified — security-plan framework sections** |
 
-The record set is therefore **not yet evidence-complete as a whole**.
+Final result:
 
 ```text
-Pilot Record
-    ↓
-Provision verification
-    ↓
-Evidence-complete record
-    ↓
-Applicability assessment
-    ↓
-Potential TPAD control
+Evidence-complete records     3 / 5
+Evidence gaps                 2 / 5
 ```
+
+The record set is therefore **not evidence-complete as a whole** and remains `draft`.
+
+The two unresolved records are deliberately retained as controlled evidence gaps rather than being assigned inferred citations.
 
 ## 6. ICAO / EASA Comparison Boundary
 
@@ -170,14 +166,22 @@ No ICAO or EASA comparative assertion is populated in this record set.
 
 This is intentional. REG-001 requires an explicit authoritative source provision before comparative analysis is recorded.
 
-The next comparison cycle may select matching ICAO and EASA provisions for individual records, but comparison must remain separate from Thai legal applicability.
+The next comparison cycle may select matching ICAO and EASA provisions for individual verified records, but comparison must remain separate from Thai legal applicability.
 
 ## 7. Lifecycle Boundary
 
-`REG-KR-001` remains `draft` because the five-record set is not yet evidence-complete.
+`REG-KR-001` remains `draft` because two of the five records are not evidence-complete.
 
 Approval of the record set will not itself determine legal applicability to TPAD.
 
-## 8. Next Controlled Action
+## 8. Verification Decision
 
-Complete exact provision retrieval for REG-KR-001-001 and REG-KR-001-002. Do not infer missing citations. Then perform a final evidence verification pass before Quality Review of REG-KR-001.
+**Evidence Verification Result: PARTIAL PASS**
+
+The pilot demonstrates that provision-level regulatory knowledge records can be constructed with controlled provenance and explicit evidence status. It does not yet demonstrate evidence completeness for all five records.
+
+No further citation inference is authorized for REG-KR-001-001 or REG-KR-001-002 without additional source evidence.
+
+## 9. Next Controlled Action
+
+Proceed to Quality Review of REG-KR-001 as a **partial-evidence pilot**, with the two unresolved records explicitly recorded as non-blocking evidence gaps for this implementation test.
