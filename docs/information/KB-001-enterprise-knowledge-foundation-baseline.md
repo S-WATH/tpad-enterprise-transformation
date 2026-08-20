@@ -2,7 +2,7 @@
 id: KB-001
 title: Enterprise Knowledge Foundation Baseline
 type: information
-status: draft
+status: review
 version: 0.1.0
 domain: information
 owner: TPAD Enterprise Transformation Team
@@ -327,12 +327,13 @@ Changes to KB-001 must follow the applicable document lifecycle, metadata, docum
 
 This Review Draft was approved in Project Conversation for controlled implementation on 2026-08-20.
 
-This approval authorizes controlled repository implementation of this specification. It does not by itself promote the document lifecycle status from `draft` to `approved` or `released` unless the applicable formal lifecycle authority and quality controls are completed.
+The Quality Review QR-KB-001 recorded a PASS and authorized progression to lifecycle approval.
 
 ## 18. References
 
 - AB-2.0 Baseline Evidence Register
 - HND-002 — Project Authority Evidence Record
+- QR-KB-001 — Quality Review
 - SEM-001 — Enterprise Semantic Principles
 - SEM-002 — Enterprise Identifier Standard
 - CON-001 — Enterprise Concept Catalog
