@@ -77,17 +77,18 @@ Evidence / Verification Status
 | Source | Air Navigation Act B.E. 2497 consolidated text |
 | Source family | Thai aviation law |
 | Knowledge role | Legal Obligation |
-| Provision target | `มาตรา ๓๔` — pilot record target |
+| Provision target | Pilot record target retained; exact provision citation not established in this verification pass |
 | TPAD applicability | `UNASSESSED` |
 | Verification status | `PENDING — EXACT PROVISION TEXT/CITATION RETRIEVAL` |
 
 **Source-derived assertion:** The pilot corpus identifies a statutory requirement concerning documents to be carried or available with an aircraft for flight, subject to the conditions and exceptions in the Act.
 
-**Evidence boundary:** The current source-search evidence retrieved for this verification cycle does not expose the complete text of section 34. Therefore the record is not promoted to evidence-complete status yet.
+**Evidence boundary:** The current source-search evidence retrieved for this verification cycle does not expose the complete text needed to establish the exact provision citation. Therefore the record is not promoted to evidence-complete status and no citation is inferred.
 
 ### REG-KR-001-003 — Airworthiness / No-Fly Conditions
 
 | Field | Value |
+|---|---|
 |---|---|
 | Identifier | REG-KR-001-003 |
 | Source | Air Navigation Act B.E. 2497 consolidated text |
@@ -111,11 +112,13 @@ The project source explicitly identifies these provisions. fileciteturn74f
 | Source | Air Navigation Act B.E. 2497 consolidated text |
 | Source family | Thai aviation law |
 | Knowledge role | Legal Obligation / Regulatory Requirement |
-| Provision target | Maintenance-organisation certification provisions; exact section retained as pilot target |
+| Provision target | `มาตรา ๔๑/๙๓` and `มาตรา ๔๑/๙๔` |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `PARTIALLY VERIFIED — EXACT SECTION CITATION NOT YET RETRIEVED` |
+| Verification status | `VERIFIED — SECTION-LEVEL` |
 
-**Source-derived assertion:** The project source identifies requirements concerning certification and operation of aircraft maintenance organisations, including certificate distinctions for aircraft, major components, and aircraft equipment/parts.
+**Source-derived assertion:** Section 41/93 states that operating a maintenance organisation in Thailand requires a maintenance-organisation certificate and distinguishes three certificate types: aircraft maintenance, major aircraft components, and aircraft equipment/parts. Section 41/94 prohibits operation of a maintenance organisation without the required certificate from the Director.
+
+The project source explicitly identifies sections 41/93 and 41/94 and the three certificate types. fileciteturn78file5
 
 **Control boundary:** This record does not conclude that the statutory certification regime applies directly to TPAD or its internal maintenance organisation.
 
@@ -144,7 +147,7 @@ The source also contains provisions concerning security plans for specific aviat
 | REG-KR-001-001 | Partially verified — subordinate requirement not identified |
 | REG-KR-001-002 | Pending exact provision retrieval |
 | REG-KR-001-003 | Verified — sections 41/88 and 41/89 |
-| REG-KR-001-004 | Partially verified — exact section citation not retrieved |
+| REG-KR-001-004 | Verified — sections 41/93 and 41/94 |
 | REG-KR-001-005 | Verified — security-plan framework sections |
 
 The record set is therefore **not yet evidence-complete as a whole**.
@@ -177,4 +180,4 @@ Approval of the record set will not itself determine legal applicability to TPAD
 
 ## 8. Next Controlled Action
 
-Complete exact provision retrieval for REG-KR-001-001, 002, and 004. Then perform a second evidence verification pass before Quality Review of REG-KR-001.
+Complete exact provision retrieval for REG-KR-001-001 and REG-KR-001-002. Do not infer missing citations. Then perform a final evidence verification pass before Quality Review of REG-KR-001.
