@@ -1,9 +1,9 @@
 ---
 id: REG-PILOT-001
 title: Regulatory Knowledge Pilot Corpus — Air Navigation Act
- type: information
+type: information
 status: draft
-version: 0.1.0
+version: 0.2.0
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
 created: 2026-08-20
@@ -24,9 +24,9 @@ source_documents:
 
 ## 1. Purpose
 
-Establish the first controlled pilot corpus for D02 — Regulatory & Standards using one authoritative source document already held in the TPAD project repository/file set.
+Establish the first controlled pilot corpus for D02 — Regulatory & Standards using one project-provided source document.
 
-The pilot tests whether REG-001 can represent regulatory source identity, provision-level citation, requirement/obligation context, applicability boundaries, provenance, and evidence without converting interpretation into authoritative legal conclusions.
+The pilot tests whether REG-001 can represent source identity, provision-level citation, requirement/obligation context, applicability boundaries, provenance, and evidence without converting interpretation into an authoritative legal conclusion.
 
 ## 2. Pilot Source
 
@@ -36,106 +36,63 @@ The pilot tests whether REG-001 can represent regulatory source identity, provis
 
 **Pilot status:** Controlled extraction draft.
 
-The pilot does not claim that the consolidated source is the complete current regulatory corpus. It is the selected source for this first implementation test.
+This pilot does not claim that the consolidated source is the complete current regulatory corpus.
 
 ## 3. Pilot Objectives
 
 1. Test source and provision identity.
 2. Test requirement/obligation representation.
-3. Test traceability from Act provision to evidence.
-4. Test distinction between statutory text and downstream Director requirements/regulations.
-5. Test preservation of uncertainty where TPAD applicability has not been determined.
+3. Test traceability from provision to evidence.
+4. Test distinction between statutory text and subordinate requirements/regulations.
+5. Preserve uncertainty where TPAD applicability has not been determined.
 
-## 4. Controlled Extraction Boundary
+## 4. Evidence Register
 
-The initial pilot intentionally selects a small set of provisions/themes visible in the source rather than extracting the entire Act.
+| Record | Provision target | Source-derived observation | Knowledge role | Domain context | Applicability |
+|---|---|---|---|---|---|
+| RP-001-001 | Section 15/2 and related provisions | The Act contains provisions referring to requirements determined or prescribed by the Director. | Regulatory Requirement context | D02 | UNASSESSED |
+| RP-001-002 | Section 16 | The Act requires specified aircraft documents/items for flight, including registration, airworthiness, journey log and crew licences, subject to stated exceptions. | Legal Obligation context | D02 / D03 | UNASSESSED |
+| RP-001-003 | Sections 41/83–41/89 | The Act contains controls concerning unsafe aircraft, prohibition of flight, airworthiness certificate status, and conditions associated with maintenance/certification and flight. | Legal Obligation context | D02 / D03 / D05 | UNASSESSED |
+| RP-001-004 | Sections 41/103–41/105 | The Act contains requirements concerning maintenance organisations, records, personnel, training policy, quality/assurance systems and related Director requirements. | Legal Obligation + Regulatory Requirement context | D02 / D05 / D06 / D08 | UNASSESSED |
+| RP-001-005 | Sections 50/28–50/31 | The Act contains requirements concerning civil aviation security plans and related security/training controls. | Legal Obligation + Regulatory Requirement context | D02 / D04 | UNASSESSED |
 
-| Pilot Record | Source reference | Knowledge theme | Initial role |
-|---|---|---|---|
-| RP-001-001 | Section 15/2 and related provisions referenced by the Act | Director authority / prescribed requirements | Regulatory Requirement context |
-| RP-001-002 | Section 16 | Aircraft documents required for flight, including registration, airworthiness, journey log, crew licences and other prescribed items | Legal Obligation context |
-| RP-001-003 | Sections 41/83–41/89 | Airworthiness safety controls, prohibition on flight in specified conditions, and restoration after maintenance/certification | Legal Obligation context |
-| RP-001-004 | Section 41/103–41/105 | Approved maintenance organisation responsibilities, records, personnel, training policy, quality/assurance controls and Director requirements | Legal Obligation + Regulatory Requirement context |
-| RP-001-005 | Sections 50/28–50/31 | Civil aviation security plans and approval requirements | Legal Obligation + Regulatory Requirement context |
+The table records source-derived targets and observations. It is not a complete legal interpretation of any provision.
 
-The references above identify pilot targets. They are not a complete legal interpretation of the cited provisions.
-
-## 5. Evidence Examples
+## 5. Provision-Level Evidence Notes
 
 ### RP-001-001 — Director Requirements
 
-The source contains provisions that delegate or refer to requirements determined by the Director, including provisions where applications or activities are to follow criteria and procedures specified in requirements.
+The source contains provisions that refer to requirements, criteria, procedures, conditions, or limitations prescribed by the Director. The pilot records this as a regulatory-requirement context and does not create the subordinate requirement unless its authoritative source is separately identified.
 
-Evidence example: the Act refers to criteria and procedures specified in the requirements for certain aircraft modification and production activities.
-
-Classification:
-
-```text
-Source Type: Law
-Knowledge Role: Regulatory Requirement context
-Authority: Thai statutory framework
-Applicability: UNASSESSED
-Evidence: Source provision / citation required
-```
+Evidence anchor: Section 15/2 and related provisions in the project-provided consolidated text.
 
 ### RP-001-002 — Documents Required for Flight
 
-The source states that an aircraft shall not fly unless specified documents/items are present, including registration certificate, nationality and registration marks, certificate of airworthiness, journey log, crew licences, and other specified items, subject to stated exceptions.
+The source states that an aircraft shall not fly unless specified documents/items are present, including registration documentation, certificate of airworthiness, journey log and crew licences, subject to stated exceptions.
 
-Classification:
+Evidence anchor: Section 16 in the project-provided consolidated text.
 
-```text
-Source Type: Law
-Knowledge Role: Legal Obligation context
-Applicability to TPAD: UNASSESSED
-Evidence: Section 16 source text
-```
+### RP-001-003 — Airworthiness / Flight Prohibition
 
-### RP-001-003 — Airworthiness / No-Fly Conditions
+The source contains controls concerning aircraft that are unsafe and circumstances in which flight is prohibited or an airworthiness certificate is temporarily invalid. The source also contains provisions addressing necessary flight to a registered operator base, maintenance organisation, or safe location under specified circumstances.
 
-The source provides controls concerning aircraft that are unsafe, including a Director power to prohibit flight and conditions under which an aircraft may fly after maintenance/certification. The source also specifies circumstances in which a certificate of airworthiness is temporarily invalid and identifies conditions prohibiting flight.
-
-Classification:
-
-```text
-Source Type: Law
-Knowledge Role: Legal Obligation context
-Domain relevance: Airworthiness & Maintenance / Aviation Operations
-Applicability to TPAD: UNASSESSED
-Evidence: Sections 41/83–41/89 source text
-```
+Evidence anchor: Sections 41/83–41/90 in the project-provided consolidated text.
 
 ### RP-001-004 — Maintenance Organisation Controls
 
-The source specifies responsibilities of certificate holders and maintenance organisations, including facilities, tools, regulatory/airworthiness records, management and maintenance manuals, quality control and quality assurance systems, maintenance records, personnel, training policy, and reporting.
+The source contains provisions concerning maintenance organisation responsibilities and controls, including facilities/tools, manuals and records, quality control/quality assurance, maintenance records, personnel and training policy, together with requirements prescribed by the Director.
 
-Classification:
-
-```text
-Source Type: Law
-Knowledge Role: Legal Obligation + Regulatory Requirement context
-Domain relevance: Airworthiness & Maintenance / Quality & Assurance / Training & Competency
-Applicability to TPAD: UNASSESSED
-Evidence: Sections 41/103–41/105 source text
-```
+Evidence anchor: Sections 41/103–41/105 in the project-provided consolidated text.
 
 ### RP-001-005 — Aviation Security Plans
 
-The source contains requirements concerning approved civil aviation security plans and related training/security-plan controls for relevant aviation entities.
+The source contains provisions concerning civil aviation security plans and associated security controls. The pilot records these provisions as source evidence for later controlled analysis without asserting direct TPAD applicability.
 
-Classification:
-
-```text
-Source Type: Law
-Knowledge Role: Legal Obligation + Regulatory Requirement context
-Domain relevance: Safety & Security
-Applicability to TPAD: UNASSESSED
-Evidence: Sections 50/28–50/31 source text
-```
+Evidence anchor: Sections 50/28–50/31 in the project-provided consolidated text.
 
 ## 6. Traceability Test
 
-The pilot shall be able to represent the following chain without inventing missing links:
+The pilot represents the target chain as:
 
 ```text
 Thai Statutory Authority
@@ -155,43 +112,43 @@ Requirement or Obligation
 Evidence
 ```
 
-Square-bracketed stages remain empty until evidence and authorized decisions exist.
+Bracketed stages remain unpopulated until appropriate evidence and authorized decisions exist.
 
 ## 7. Applicability Boundary
 
-This pilot does **not** determine whether every selected provision applies directly to TPAD.
+Applicability remains `UNASSESSED` for all five pilot records.
 
-In particular, the Act contains definitions, exceptions, differentiated aviation activities, and provisions directed to particular regulated entities. The pilot therefore records applicability as `UNASSESSED` unless an authoritative assessment is available.
+The Act contains differentiated regulated entities, activities, exceptions, certificates, and delegated requirements. Therefore the pilot must not infer direct TPAD applicability merely from the existence of a statutory provision.
 
-No statement in this document should be treated as a legal opinion.
+No statement in this document is a legal opinion.
 
-## 8. Cross-Domain Context
+## 8. Semantic and Cross-Domain Boundary
 
-The selected pilot records demonstrate why regulatory knowledge cannot be isolated from other domains:
+The pilot does not create new Enterprise Object classes or relationship types.
+
+Domain context is recorded separately from object identity and must remain compatible with OBJ-001 and REL-001.
+
+Example:
 
 ```text
 D02 Regulatory & Standards
         |
-        +----> D03 Aviation Operations
-        |
-        +----> D04 Safety & Security
-        |
-        +----> D05 Airworthiness & Maintenance
-        |
-        +----> D06 Training & Competency
-        |
-        +----> D08 Quality & Assurance
+        +---- D03 Aviation Operations
+        +---- D04 Safety & Security
+        +---- D05 Airworthiness & Maintenance
+        +---- D06 Training & Competency
+        +---- D08 Quality & Assurance
 ```
 
-These are domain-context examples only. Enterprise Object relationships must be established using OBJ-001 and REL-001 with supporting evidence.
+These are domain-context examples only; actual relationships require evidence and REL-001.
 
-## 9. EASA / ICAO Comparison Boundary
+## 9. ICAO / EASA Comparison Boundary
 
-REG-PILOT-001 is intentionally a **Thai-source extraction pilot**.
+This version remains a **Thai-source extraction pilot**.
 
-ICAO and EASA are not yet asserted as comparative counterparts for individual pilot records in this version because the corresponding authoritative provisions have not been selected and verified for each specific comparison.
+No individual pilot record is currently assigned an ICAO or EASA counterpart because the corresponding authoritative provisions have not yet been explicitly selected and verified for that record.
 
-The REG-001 principle remains active:
+The REG-001 strategic baseline remains:
 
 ```text
 Thai Authority
@@ -205,23 +162,23 @@ Comparative Analysis
 
 Comparison will be performed only after the relevant ICAO/EASA provisions are explicitly identified and evidence-linked.
 
-## 10. Quality Acceptance Criteria
+## 10. Evidence Quality Rules
 
-The pilot is ready for Quality Review only when the review can verify:
+A pilot record is acceptable for Quality Review only when:
 
-- each record has a source identity;
-- each record has a sufficiently precise provision reference;
+- source identity is explicit;
+- provision reference is sufficiently precise;
 - source text is distinguished from interpretation;
 - applicability is not inferred without evidence;
-- domain context does not replace Enterprise Object identity;
-- no unsupported ICAO/EASA equivalence is asserted; and
-- the extraction remains limited to the approved pilot boundary.
+- domain context does not replace object identity;
+- unsupported ICAO/EASA equivalence is not asserted; and
+- the record remains within the controlled pilot boundary.
 
 ## 11. Out of Scope
 
 - Full Act extraction.
 - Legal applicability determination.
-- Legal advice or interpretation.
+- Legal advice or authoritative legal interpretation.
 - Complete CAAT regulatory corpus.
 - Complete ICAO comparison.
 - Complete EASA comparison.
@@ -235,15 +192,15 @@ The pilot is ready for Quality Review only when the review can verify:
 ```text
 REG-001              APPROVED
         ↓
-REG-PILOT-001        DRAFT
+REG-PILOT-001        DRAFT v0.2.0
         ↓
-Source extraction    IN PROGRESS
+Provision extraction READY FOR QUALITY REVIEW
         ↓
 Quality Review       NOT STARTED
 ```
 
-This document is an implementation pilot artifact and does not change AB-2.0, KB-001, DOM-001, or REG-001.
+This artifact does not change AB-2.0, KB-001, DOM-001, or REG-001.
 
 ## 13. Source Evidence Notes
 
-The pilot source contains, among other provisions, requirements concerning aircraft documents carried for flight, airworthiness/no-fly conditions, maintenance organisation responsibilities, and aviation security plans. These source-derived observations are the basis for the selected pilot records.
+The project-provided consolidated Act contains, among other provisions, requirements and controls concerning aircraft documents for flight, airworthiness and flight prohibition, maintenance organisation controls, and civil aviation security. These source-derived observations form the limited basis of this pilot corpus.
