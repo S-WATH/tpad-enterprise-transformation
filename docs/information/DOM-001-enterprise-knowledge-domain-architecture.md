@@ -2,7 +2,7 @@
 id: DOM-001
 title: Enterprise Knowledge Domain Architecture
 type: information
-status: draft
+status: approved
 version: 0.1.0
 domain: information
 owner: TPAD Enterprise Transformation Team
@@ -251,9 +251,9 @@ Changes to the domain structure must be evidence-based and must not be inferred 
 
 ## 15. Review Decision
 
-This Review Draft was approved in Project Conversation for controlled implementation on 2026-08-20.
+The DOM-001 Quality Review recorded a **PASS** with no blocking findings. The document is approved for controlled lifecycle status on 2026-08-20.
 
-This approval authorizes controlled repository implementation of DOM-001. It does not by itself promote the document lifecycle status from `draft` to `approved` or `released`.
+This approval does not authorize release. Release remains a separate controlled decision subject to the applicable release controls.
 
 ## 16. References
 
