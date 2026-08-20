@@ -2,7 +2,7 @@
 id: REG-001
 title: Regulatory & Standards Knowledge Domain Baseline
 type: information
-status: draft
+status: approved
 version: 0.2.0
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
@@ -345,9 +345,9 @@ EASA, ICAO, Thai legal/regulatory, and other source comparisons shall preserve s
 
 ## 17. Review Decision
 
-This is **Review Draft v0.2** incorporating the approved project direction that EASA regulatory material is a standing strategic comparative baseline alongside Thai authority and ICAO sources where relevant.
+The REG-001 Quality Review recorded a **PASS** with no blocking findings. The document is approved for controlled lifecycle status on 2026-08-20.
 
-This draft is not approved, released, or a legal applicability determination.
+This approval does not authorize release, legal applicability determinations, regulatory corpus ingestion, or downstream implementation beyond the approved lifecycle step.
 
 ## 18. References
 
