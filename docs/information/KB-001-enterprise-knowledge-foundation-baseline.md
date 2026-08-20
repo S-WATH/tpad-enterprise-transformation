@@ -2,7 +2,7 @@
 id: KB-001
 title: Enterprise Knowledge Foundation Baseline
 type: information
-status: review
+status: approved
 version: 0.1.0
 domain: information
 owner: TPAD Enterprise Transformation Team
@@ -328,6 +328,10 @@ Changes to KB-001 must follow the applicable document lifecycle, metadata, docum
 This Review Draft was approved in Project Conversation for controlled implementation on 2026-08-20.
 
 The Quality Review QR-KB-001 recorded a PASS and authorized progression to lifecycle approval.
+
+KB-001 has now progressed through `Draft → Review → Approved`.
+
+Release is not authorized by this lifecycle decision.
 
 ## 18. References
 
