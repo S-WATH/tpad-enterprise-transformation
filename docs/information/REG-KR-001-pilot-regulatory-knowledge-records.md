@@ -1,13 +1,13 @@
 ---
 id: REG-KR-001
-title: Pilot Regulatory Knowledge Records — Air Navigation Act
+title: Pilot Regulatory Knowledge Records — Regulatory Chain Model
 type: information
 status: draft
-version: 0.3.0
+version: 0.4.0
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-21
 related:
   - REG-001
   - REG-PILOT-001
@@ -15,173 +15,215 @@ related:
   - KB-001
   - DOM-001
   - AB-2.0
+  - SEM-002
+  - OBJ-001
+  - REL-001
 ---
 
 # REG-KR-001 — Pilot Regulatory Knowledge Records
 
 ## 1. Purpose
 
-Create reusable provision-level regulatory knowledge records from the five pilot records in REG-PILOT-001 while preserving source provenance and keeping TPAD applicability explicitly unassessed.
+Create reusable provision-level regulatory knowledge records while preserving source provenance, regulatory derivation, and TPAD applicability status.
 
-This deliverable is a controlled implementation test. It does not create legal conclusions, TPAD controls, procedures, or ICAO/EASA equivalence.
+This revision adds a **Parent–Subordinate Regulatory Traceability Model** discovered during pilot implementation. The model recognizes that a primary statute may establish broad authority while detailed requirements may be specified in subordinate instruments such as CAAT regulations, TCAR, notifications, orders, or other instruments issued under delegated authority.
 
-## 2. Source Basis
+This deliverable does not create legal conclusions, TPAD controls, procedures, or ICAO/EASA equivalence.
 
-Primary source:
+## 2. Regulatory Source Model
 
-`พระราชบัญญัติการเดินอากาศ พ.ศ. 2497 และที่แก้ไขเพิ่มเติมจนถึงฉบับที่ 14 (Consolidated Text)`
+A regulatory knowledge record shall not assume that the requirement of interest is fully specified in the parent Act.
 
-The project-provided consolidated text is the source of record. Provision verification is recorded only where the current source evidence provides sufficient section-level evidence.
-
-## 3. Record Model
+The controlled search model is:
 
 ```text
-Identifier
-  ↓
-Source / Authority
-  ↓
-Provision / Citation
-  ↓
-Source-derived Assertion
-  ↓
-Knowledge Role
-  ↓
-Applicability Status
-  ↓
-Evidence / Verification Status
+Authority / Legal Basis
+          |
+          v
+Parent Legal Instrument
+          |
+          | authorizes / delegates / establishes framework
+          v
+Subordinate Regulatory Instrument
+          |
+          | specifies / implements
+          v
+Detailed Provision
+          |
+          v
+Requirement / Obligation
+          |
+          v
+Applicability Assessment
+          |
+          v
+TPAD Control / Standard
+          |
+          v
+Evidence
 ```
 
-## 4. Pilot Records
+The exact relationship between instruments must be established from authoritative evidence. The diagram is a conceptual traceability pattern and does not create a universal legal hierarchy.
+
+## 3. Regulatory Search Rule
+
+When a pilot assertion cannot be located at the parent-law level, the correct next action is **not** to infer that the assertion is unsupported.
+
+The search shall proceed through potentially relevant subordinate instruments where the parent instrument provides authority or framework for them.
+
+Potential subordinate sources include, where applicable:
+
+- CAAT regulations or requirements;
+- TCAR and related regulatory instruments;
+- notifications or orders issued under statutory authority;
+- applicable ministerial or governmental regulations;
+- technical standards or requirements issued under delegated authority; and
+- other authoritative implementing instruments.
+
+The existence and legal effect of a subordinate instrument must be verified from its own source.
+
+## 4. Pilot Records and Regulatory-Chain Status
 
 ### REG-KR-001-001 — Director Requirements
 
 | Field | Value |
 |---|---|
 | Identifier | REG-KR-001-001 |
-| Source | Air Navigation Act B.E. 2497 consolidated text |
-| Source family | Thai aviation law |
+| Parent source | Air Navigation Act B.E. 2497 consolidated text |
+| Current chain status | `CHAIN-SEARCH REQUIRED` |
 | Knowledge role | Regulation / Requirement context |
-| Provision target | Director-prescribed requirements; exact provision not established |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `PENDING — EXACT PROVISION NOT IDENTIFIED` |
+| Evidence status | `PARENT-AUTHORITY IDENTIFIED; DETAILED REQUIREMENT NOT YET TRACED` |
 
-**Verification result:** The source contains multiple provisions under which the Director may determine criteria, conditions, procedures, or other requirements. The current source evidence does not establish a single provision that can safely be used as the exact citation for the generic pilot assertion “Director Requirements”.
+**Finding:** The parent Act contains multiple provisions under which the Director may determine criteria, conditions, procedures, or requirements. The generic pilot assertion “Director Requirements” is therefore too broad to map safely to one citation.
 
-**Control boundary:** No generic Director-prescribed requirement is represented as a reusable evidence-complete record until its exact provision is identified.
+**Required next step:** Identify the specific subject matter intended by the record, then trace the relevant statutory authority to the subordinate instrument that specifies the detailed requirement, if one exists.
+
+**Control boundary:** Do not create a generic reusable requirement record from the parent-law authority alone.
 
 ### REG-KR-001-002 — Documents Required for Flight
 
 | Field | Value |
 |---|---|
 | Identifier | REG-KR-001-002 |
-| Source | Air Navigation Act B.E. 2497 consolidated text |
-| Source family | Thai aviation law |
-| Knowledge role | Legal Obligation |
-| Provision target | Pilot record target retained; exact provision citation not established |
+| Parent source | Air Navigation Act B.E. 2497 consolidated text |
+| Current chain status | `CHAIN-SEARCH REQUIRED` |
+| Knowledge role | Legal Obligation / Regulatory Requirement context |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `PENDING — EXACT PROVISION TEXT/CITATION NOT RETRIEVED` |
+| Evidence status | `PARENT-SOURCE INSUFFICIENT FOR DETAILED ASSERTION` |
 
-**Verification result:** The current source-search evidence does not expose sufficient provision-level text to establish the exact citation for the pilot assertion concerning documents to be carried or available with an aircraft for flight.
+**Finding:** The pilot assertion concerns specific aircraft documents required for flight. The parent Act alone should not be assumed to contain the complete operational detail.
 
-**Control boundary:** No citation is inferred and the record is not promoted to evidence-complete status.
+**Required next step:** Trace the statutory authority to the relevant CAAT/TCAR or other subordinate instrument, then identify the exact detailed requirement and its exceptions/conditions.
+
+**Control boundary:** No exact citation or TPAD applicability conclusion is inferred until the regulatory chain is verified.
 
 ### REG-KR-001-003 — Airworthiness / No-Fly Conditions
 
 | Field | Value |
 |---|---|
 | Identifier | REG-KR-001-003 |
-| Source | Air Navigation Act B.E. 2497 consolidated text |
-| Source family | Thai aviation law |
-| Knowledge role | Legal Obligation / Regulatory Requirement context |
-| Provision target | `มาตรา ๔๑/๘๘` and `มาตรา ๔๑/๘๙` |
+| Parent source | Air Navigation Act B.E. 2497 consolidated text |
+| Provision | `มาตรา ๔๑/๘๘` and `มาตรา ๔๑/๘๙` |
+| Chain status | `PARENT PROVISION VERIFIED` |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `VERIFIED — SECTION-LEVEL` |
+| Evidence status | `VERIFIED — SECTION-LEVEL` |
 
-**Source-derived assertion:** Section 41/88 addresses restoration of an aircraft to a safe-flight condition before flight when the aircraft is considered unsafe for flight. Section 41/89 prohibits flight in specified conditions, including circumstances involving the airworthiness certificate.
+The parent Act itself provides relevant provisions addressing restoration to safe-flight condition and specified no-fly conditions. The record therefore does not require a subordinate-instrument citation merely to establish the source-derived assertion at this level. fileciteturn74file11
 
-The project source explicitly identifies these provisions. fileciteturn74file11
-
-**Control boundary:** This record does not determine how these provisions apply to TPAD state-aircraft operations.
+**Control boundary:** Applicability to TPAD state-aircraft operations remains unassessed.
 
 ### REG-KR-001-004 — Maintenance Organisation Controls
 
 | Field | Value |
 |---|---|
 | Identifier | REG-KR-001-004 |
-| Source | Air Navigation Act B.E. 2497 consolidated text |
-| Source family | Thai aviation law |
-| Knowledge role | Legal Obligation / Regulatory Requirement |
-| Provision target | `มาตรา ๔๑/๙๓` and `มาตรา ๔๑/๙๔` |
+| Parent source | Air Navigation Act B.E. 2497 consolidated text |
+| Provision | `มาตรา ๔๑/๙๓` and `มาตรา ๔๑/๙๔` |
+| Chain status | `PARENT PROVISION VERIFIED` |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `VERIFIED — SECTION-LEVEL` |
+| Evidence status | `VERIFIED — SECTION-LEVEL` |
 
-**Source-derived assertion:** Section 41/93 addresses the requirement for a maintenance-organisation certificate and distinguishes three certificate types. Section 41/94 prohibits operation of a maintenance organisation without the required certificate from the Director.
+The parent Act itself identifies the maintenance-organisation certification framework and related prohibition. fileciteturn78file5
 
-The project source explicitly identifies sections 41/93 and 41/94 and the three certificate types. fileciteturn78file5
-
-**Control boundary:** This record does not conclude that the statutory certification regime applies directly to TPAD or its internal maintenance organisation.
+**Control boundary:** The record does not determine direct applicability to TPAD.
 
 ### REG-KR-001-005 — Aviation Security Plans
 
 | Field | Value |
 |---|---|
 | Identifier | REG-KR-001-005 |
-| Source | Air Navigation Act B.E. 2497 consolidated text |
-| Source family | Thai aviation law |
-| Knowledge role | Legal Obligation / Regulatory Requirement context |
-| Provision target | `มาตรา ๕๐/๑๖`, `มาตรา ๕๐/๒๗`, and related security-plan provisions |
+| Parent source | Air Navigation Act B.E. 2497 consolidated text |
+| Provision | `มาตรา ๕๐/๑๖`, `มาตรา ๕๐/๒๗`, and related security-plan provisions |
+| Chain status | `PARENT FRAMEWORK VERIFIED; ACTOR-SPECIFIC DETAIL MAY REQUIRE SUBORDINATE TRACE` |
 | TPAD applicability | `UNASSESSED` |
-| Verification status | `VERIFIED — SECTION-LEVEL FOR SECURITY-PLAN FRAMEWORK` |
+| Evidence status | `VERIFIED — SECTION-LEVEL FOR SECURITY-PLAN FRAMEWORK` |
 
-**Source-derived assertion:** Section 50/16 establishes the National Civil Aviation Security Plan and section 50/27 identifies national security plans and related security-plan elements within the security framework.
+The parent Act establishes the national aviation-security plan framework and identifies related security-plan elements. Actor-specific requirements may require further regulatory-chain tracing. fileciteturn72file18 fileciteturn73file2
 
-The source also contains provisions concerning security plans for specific aviation actors. fileciteturn72file18 fileciteturn73file2
+**Control boundary:** No TPAD security-plan obligation is inferred.
 
-**Control boundary:** This record does not establish a TPAD security-plan obligation without a separate applicability assessment.
+## 5. Evidence Status Summary
 
-## 5. Final Evidence Verification Status
-
-| Record | Final verification state |
+| Record | Current status |
 |---|---|
-| REG-KR-001-001 | **Pending — exact provision not identified** |
-| REG-KR-001-002 | **Pending — exact provision text/citation not retrieved** |
-| REG-KR-001-003 | **Verified — sections 41/88 and 41/89** |
-| REG-KR-001-004 | **Verified — sections 41/93 and 41/94** |
-| REG-KR-001-005 | **Verified — security-plan framework sections** |
+| REG-KR-001-001 | Parent authority identified; subordinate-chain search required |
+| REG-KR-001-002 | Parent source insufficient for detailed assertion; subordinate-chain search required |
+| REG-KR-001-003 | Parent provision verified |
+| REG-KR-001-004 | Parent provision verified |
+| REG-KR-001-005 | Parent framework verified; detailed actor applicability may require subordinate trace |
 
-Final result:
+The two earlier evidence gaps are therefore reclassified as **regulatory-chain discovery tasks**, not unsupported assertions.
+
+## 6. ICAO / EASA Comparative Boundary
+
+Comparative analysis shall be performed at the **corresponding requirement level**, not merely by comparing parent statutes with foreign detailed regulations.
 
 ```text
-Evidence-complete records     3 / 5
-Evidence gaps                 2 / 5
+Thai Parent / Subordinate Chain
+             |
+             v
+      Detailed Requirement
+             |
+      +------+------+
+      |             |
+     ICAO          EASA
+      |             |
+      +------+------+
+             |
+             v
+    Comparative Analysis
+             |
+             v
+      TPAD Strategic Decision
 ```
 
-The record set is therefore **not evidence-complete as a whole** and remains `draft`.
+An ICAO or EASA provision may be recorded only when the corresponding authoritative provision has been explicitly selected and verified.
 
-The two unresolved records are deliberately retained as controlled evidence gaps rather than being assigned inferred citations.
+EASA remains a Strategic Comparative Regulatory Baseline under REG-001.
 
-## 6. ICAO / EASA Comparison Boundary
+## 7. Methodology Finding
 
-No ICAO or EASA comparative assertion is populated in this record set.
+The pilot demonstrates that regulatory knowledge extraction must support **multi-level regulatory provenance**.
 
-This is intentional. REG-001 requires an explicit authoritative source provision before comparative analysis is recorded.
+A parent Act may answer:
 
-The next comparison cycle may select matching ICAO and EASA provisions for individual verified records, but comparison must remain separate from Thai legal applicability.
+> “Who has authority and what framework exists?”
 
-## 7. Lifecycle Boundary
+while a subordinate instrument may answer:
 
-`REG-KR-001` remains `draft` because two of the five records are not evidence-complete.
+> “What exactly must the regulated party do?”
 
-Approval of the record set will not itself determine legal applicability to TPAD.
+The repository must preserve both levels and their evidence-backed relationship.
 
-## 8. Verification Decision
+## 8. Lifecycle Boundary
 
-**Evidence Verification Result: PARTIAL PASS**
+`REG-KR-001` remains `draft`.
 
-The pilot demonstrates that provision-level regulatory knowledge records can be constructed with controlled provenance and explicit evidence status. It does not yet demonstrate evidence completeness for all five records.
-
-No further citation inference is authorized for REG-KR-001-001 or REG-KR-001-002 without additional source evidence.
+This revision changes the methodology and traceability model but does not approve any new legal applicability, regulatory requirement, or TPAD control.
 
 ## 9. Next Controlled Action
 
-Proceed to Quality Review of REG-KR-001 as a **partial-evidence pilot**, with the two unresolved records explicitly recorded as non-blocking evidence gaps for this implementation test.
+Perform regulatory-chain discovery for `REG-KR-001-001` and `REG-KR-001-002` using the parent statutory authority as the starting point and the relevant CAAT / TCAR / subordinate instruments as the next evidence layer.
+
+Do not promote either record to evidence-complete until the detailed provision and its authoritative source have been verified.
