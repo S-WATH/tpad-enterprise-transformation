@@ -3,11 +3,11 @@ id: REG-KR-001
 title: Pilot Regulatory Knowledge Records — Regulatory Chain Model
 type: information
 status: draft
-version: 0.5.0
+version: 0.6.0
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
 created: 2026-08-20
-updated: 2026-08-21
+updated: 2026-09-07
 related:
   - REG-001
   - REG-PILOT-001
@@ -71,15 +71,15 @@ A detailed downstream requirement was identified in the current CAAT regulatory 
 
 **Thailand Civil Aviation Regulation — Air Operations, Part NCC, `NCC.GEN.140 — Documents, manuals and information to be carried`.**
 
-The provision states that specified documents, manuals and information are to be carried on each flight as originals or copies unless otherwise specified. The listed material includes, among other items, the AFM/equivalent, original certificate of registration, original certificate of airworthiness, noise certificate, applicable authorisations, specific approvals, aircraft radio licence where applicable, third-party liability insurance certificate(s), journey log/equivalent, filed ATS flight plan where applicable, current suitable aeronautical charts, interception information, and search-and-rescue information. citeturn0search23
-
-The CAAT source identifies this as **TCAR OPS Part-NCC** and therefore provides the detailed downstream regulatory layer that the parent-law pilot record was unable to expose directly.
+The provision requires specified documents, manuals and information to be carried on each flight as originals or copies unless otherwise specified. The list includes, among other items, the AFM/equivalent, certificate of registration, certificate of airworthiness, noise certificate, applicable authorisations, specific approvals, aircraft radio licence where applicable, third-party liability insurance certificate(s), journey log/equivalent, ATS flight-plan details where applicable, suitable aeronautical charts, interception information, search-and-rescue information, relevant operations-manual material, MEL/CDL, NOTAM/AIS material, meteorological information, applicable passenger/cargo manifests, and other pertinent or State-required documentation. citeturn0search23
 
 ### 3.2 Parent-to-Subordinate Evidence
 
-The current CAAT cover regulation for TCAR OPS Part NCC/NCO states that CAAT issues detailed requirements under the Air Navigation Act and identifies statutory powers and responsibilities under the Act as the legal basis for the TCAR OPS detailed requirements. It also states that the Director General issues the detailed aircraft-operation regulation and that TCAR OPS Parts contain the detailed requirements. citeturn1search14
+The CAAT Cover Regulation for TCAR OPS Part NCC/NCO establishes the scope of the non-commercial operations regulatory set and states that TCAR OPS Parts NCC and NCO lay down requirements for non-commercial operations, including requirements for non-commercial operations with complex motor-powered aircraft. citeturn1search0
 
-This confirms the **regulatory-chain pattern** for the pilot:
+The TCAR OPS Part-NCC document identifies itself as the regulation for **non-commercial operations with complex motor-powered aircraft**, states that `must`/`shall` indicates requirements imposed by the Director General, and states that TCAR OPS is based on the consolidated EU Regulation 965/2012 framework with specified amendments. citeturn1view0
+
+The resulting evidence chain is therefore:
 
 ```text
 Air Navigation Act
@@ -88,10 +88,10 @@ Air Navigation Act
 CAAT statutory regulatory authority
         |
         v
-TCAR OPS Air Operations
+TCAR OPS / Cover Regulation
         |
         v
-TCAR OPS Part NCC
+TCAR OPS Part-NCC
         |
         v
 NCC.GEN.140
@@ -100,47 +100,60 @@ NCC.GEN.140
 Detailed document-carrying requirement
 ```
 
-### 3.3 Applicability Boundary
+The chain demonstrates the **regulatory-source pattern**. It does not by itself establish TPAD applicability.
 
-`NCC.GEN.140` is evidence of a detailed CAAT requirement, but this discovery does **not** establish that the provision applies to TPAD state aircraft.
+### 3.3 Applicability Boundary for `NCC.GEN.140`
 
-Applicability remains:
+The current source establishes that Part NCC concerns **non-commercial operations with complex motor-powered aircraft**. It does not, from the evidence reviewed in this cycle alone, establish that a TPAD state-aircraft operation falls within that regulatory category.
 
-`UNASSESSED`
+Therefore:
 
-The pilot must separately determine whether the aircraft/activity/operator category covered by Part NCC corresponds to the TPAD operation under study. No equivalence is inferred.
+`TCAR OPS Part-NCC applicability to TPAD = UNASSESSED`
+
+The next applicability assessment must separately examine:
+
+1. aircraft status/category;
+2. operation type;
+3. operator/organisation status;
+4. whether the operation is within the scope of the civil aviation regulatory regime; and
+5. any State-aircraft or public-service treatment applicable to the operation.
+
+No equivalence between `TPAD state aircraft` and `Part NCC non-commercial operation` is inferred.
 
 ### 3.4 REG-KR-001-001 — Director Requirements
 
-The generic label **“Director Requirements” is not sufficiently specific to remain an evidence-complete reusable knowledge record.**
+The generic label **“Director Requirements” is retired as an evidence-complete record concept.**
 
-Chain discovery shows that the Director General's authority is exercised through specific regulatory instruments. For example, the current TCAR OPS cover regulation explicitly states that the Director General issues detailed regulations concerning aircraft operations under statutory authority, and that TCAR OPS Parts contain the detailed requirements. citeturn1search14
+It is replaced for pilot purposes by a narrower discovery record:
 
-The TCAR ANS Part ROA also states that it is issued pursuant to Section 16/5 of the Air Navigation Act and that CAAT is responsible for issuing requirements on air navigation and flight operations; it further states that “shall” identifies requirements for which the Director General requires compliance. citeturn1search13
+**`REG-KR-001-001A — Director General–Issued Air Operations Requirements`**
 
-Therefore the correct modeling decision is:
+Scope:
 
-```text
-“Director Requirements”
-        ↓
-Too generic for a reusable record
-        ↓
-Replace with a subject-specific requirement
-        ↓
-Trace statutory authority → specific CAAT/TCAR instrument → provision
-```
+> Identify a specific air-operations subject for which the CAAT Director General has issued or approved a detailed requirement under the applicable statutory and regulatory authority.
 
-No single provision is assigned to the generic record.
+The record is a **discovery container**, not a generic requirement statement.
+
+The TCAR OPS Part-NCC source states that `must`/`shall` indicates where the Director General requires an organisation, owner or operator to comply with the defined requirement. citeturn1view0
+
+This establishes the role of Director General requirements within the subordinate instrument, but it does not justify treating “Director Requirements” as one universal provision.
+
+Current status:
+
+`SUBJECT-SPECIFIC PROVISION REQUIRED`
+
+The next step is to select one concrete subject from the existing pilot corpus and create a provision-specific record.
 
 ## 4. Updated Pilot Record Status
 
-| Record | Parent level | Downstream level | Current status |
-|---|---|---|---|
-| REG-KR-001-001 | Authority identified | Subject-specific instrument not selected | `REFINE RECORD SCOPE` |
-| REG-KR-001-002 | Parent framework identified | `TCAR OPS Part NCC — NCC.GEN.140` identified | `DOWNSTREAM PROVISION IDENTIFIED` |
-| REG-KR-001-003 | `มาตรา ๔๑/๘๘`, `๔๑/๘๙` | Not required for current assertion | `VERIFIED — PARENT PROVISION` |
-| REG-KR-001-004 | `มาตรา ๔๑/๙๓`, `๔๑/๙๔` | Not required for current assertion | `VERIFIED — PARENT PROVISION` |
-| REG-KR-001-005 | `มาตรา ๕๐/๑๖`, `๕๐/๒๗` | Actor-specific detail may require downstream trace | `PARENT FRAMEWORK VERIFIED` |
+| Record | Parent level | Downstream level | Applicability | Current status |
+|---|---|---|---|---|
+| REG-KR-001-001 | Authority identified | Generic record retired | N/A | `REFINED → 001A` |
+| REG-KR-001-001A | Director General authority identified | Subject-specific instrument not yet selected | `UNASSESSED` | `SUBJECT-SPECIFIC PROVISION REQUIRED` |
+| REG-KR-001-002 | Parent framework identified | `TCAR OPS Part-NCC — NCC.GEN.140` | `UNASSESSED` | `DOWNSTREAM PROVISION IDENTIFIED` |
+| REG-KR-001-003 | `มาตรา ๔๑/๘๘`, `๔๑/๘๙` | Not required for current assertion | `UNASSESSED` | `VERIFIED — PARENT PROVISION` |
+| REG-KR-001-004 | `มาตรา ๔๑/๙๓`, `๔๑/๙๔` | Not required for current assertion | `UNASSESSED` | `VERIFIED — PARENT PROVISION` |
+| REG-KR-001-005 | `มาตรา ๕๐/๑๖`, `๕๐/๒๗` | Actor-specific detail may require downstream trace | `UNASSESSED` | `PARENT FRAMEWORK VERIFIED` |
 
 ## 5. Important Methodological Result
 
@@ -155,8 +168,6 @@ Provision
    ↓
 Requirement
 ```
-
-Examples in this pilot include the identified airworthiness/no-fly and maintenance-organisation provisions.
 
 ### Pattern B — Parent Act establishes authority/framework; subordinate instrument specifies detail
 
@@ -176,12 +187,14 @@ Requirement
 
 ## 6. ICAO / EASA Comparison Boundary
 
-Comparative analysis must operate at the corresponding requirement level.
+Comparative analysis remains deferred until the Thai provision's applicability and regulatory level are sufficiently established.
+
+When comparison begins, it must operate at the corresponding requirement level:
 
 ```text
 Thai Regulatory Chain
         ↓
-Detailed Requirement
+Applicable Detailed Requirement
         ↕
 ICAO Corresponding Provision
         ↕
@@ -200,10 +213,10 @@ No ICAO/EASA equivalence is asserted by this discovery.
 
 `REG-KR-001` remains `draft`.
 
-The discovery result is sufficient to demonstrate the regulatory-chain method but is not sufficient to approve TPAD applicability or to release the pilot record set.
+The discovery result demonstrates the regulatory-chain method and identifies a concrete downstream provision, but does not approve TPAD applicability or release the pilot record set.
 
 ## 8. Next Controlled Action
 
-Refine `REG-KR-001-001` into a specific subject-matter record rather than continuing to search for a generic “Director Requirements” provision.
+Perform a formal applicability assessment for `REG-KR-001-002 / NCC.GEN.140` against the TPAD operation category before selecting ICAO and EASA comparison provisions.
 
-For `REG-KR-001-002`, verify the exact applicability scope of TCAR OPS Part NCC and then select the corresponding ICAO and EASA provisions for comparative analysis.
+In parallel, select one specific subject for `REG-KR-001-001A` rather than continuing to search for a generic “Director Requirements” provision.
