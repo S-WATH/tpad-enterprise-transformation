@@ -1,3 +1,29 @@
+---
+id: TPAD-CHECKPOINT-2026-09-12
+title: TPAD Transformation Checkpoint — 2026-09-12
+type: baseline
+status: draft
+version: 1.0.0
+domain: governance
+owner: TPAD Enterprise Transformation Team
+created: 2026-09-12
+updated: 2026-09-13
+tags:
+  - checkpoint
+  - baseline
+  - governance
+  - handoff
+related:
+  - TPAD-CHECKPOINT-2026-09-08
+  - AB-2.0
+  - KB-001
+  - DOM-001
+  - REG-001
+  - REG-PILOT-001
+  - REG-PILOT-002
+  - REG-KR-001
+---
+
 # TPAD Transformation Checkpoint — 2026-09-12
 
 **Checkpoint ID:** TPAD-CHECKPOINT-2026-09-12  
@@ -177,7 +203,7 @@ Section 5 is a critical applicability boundary. It establishes that the Act gene
 
 Source evidence:
 
-fileciteturn49file0L198-L210
+[Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 Therefore the current working position is **not** that Police Aviation is completely outside the Air Navigation Act. The correct approach is provision-by-provision applicability analysis.
 
@@ -187,7 +213,7 @@ The Act defines maintenance broadly in relation to continuing airworthiness, inc
 
 Source evidence:
 
-fileciteturn49file0L11-L20
+[Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 This is currently treated as scope/concept evidence only. It does not by itself establish that all maintenance provisions apply to Police Aviation.
 
@@ -197,7 +223,7 @@ The Act contains provisions concerning journey logs and recording responsibiliti
 
 Source evidence:
 
-fileciteturn48file3L116-L143
+[Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 Applicability to TPAD State/Police Aviation remains **unresolved pending cross-check against the Section 5 boundary and the applicable subordinate provisions/instruments**.
 

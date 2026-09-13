@@ -1,3 +1,26 @@
+---
+id: TPAD-CHECKPOINT-2026-09-08
+title: TPAD Transformation Checkpoint — 2026-09-08
+type: baseline
+status: archived
+version: 1.0.0
+domain: governance
+owner: TPAD Enterprise Transformation Team
+created: 2026-09-08
+updated: 2026-09-13
+tags:
+  - checkpoint
+  - baseline
+  - governance
+  - handoff
+related:
+  - TPAD-CHECKPOINT-2026-09-12
+  - AB-2.0
+  - KB-001
+  - DOM-001
+  - REG-001
+---
+
 # TPAD Transformation Checkpoint — 2026-09-08
 
 **Checkpoint ID:** TPAD-CHECKPOINT-2026-09-08  

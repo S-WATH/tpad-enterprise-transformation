@@ -3,11 +3,11 @@ id: REG-KR-001
 title: Pilot Regulatory Knowledge Records — Regulatory Chain Model
 type: information
 status: draft
-version: 0.7.0
+version: 0.7.1
 domain: regulatory-and-standards
 owner: TPAD Enterprise Transformation Team
 created: 2026-08-20
-updated: 2026-09-07
+updated: 2026-09-13
 related:
   - REG-001
   - REG-PILOT-001
@@ -72,13 +72,13 @@ A detailed downstream requirement was identified in the current CAAT regulatory 
 
 **Thailand Civil Aviation Regulation — Air Operations, Part NCC, `NCC.GEN.140 — Documents, manuals and information to be carried`.**
 
-The provision requires specified documents, manuals and information to be carried on each flight as originals or copies unless otherwise specified. The list includes, among other items, the AFM/equivalent, certificate of registration, certificate of airworthiness, noise certificate, applicable authorisations, specific approvals, aircraft radio licence where applicable, third-party liability insurance certificate(s), journey log/equivalent, ATS flight-plan details where applicable, suitable aeronautical charts, interception information, search-and-rescue information, relevant operations-manual material, MEL/CDL, NOTAM/AIS material, meteorological information, applicable passenger/cargo manifests, and other pertinent or State-required documentation. citeturn0search23
+The provision requires specified documents, manuals and information to be carried on each flight as originals or copies unless otherwise specified. The list includes, among other items, the AFM/equivalent, certificate of registration, certificate of airworthiness, noise certificate, applicable authorisations, specific approvals, aircraft radio licence where applicable, third-party liability insurance certificate(s), journey log/equivalent, ATS flight-plan details where applicable, suitable aeronautical charts, interception information, search-and-rescue information, relevant operations-manual material, MEL/CDL, NOTAM/AIS material, meteorological information, applicable passenger/cargo manifests, and other pertinent or State-required documentation. [Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 ### 3.2 Parent-to-Subordinate Evidence
 
-The CAAT Cover Regulation for TCAR Part NCC/NCO establishes the scope of the non-commercial operations regulatory set and states that TCAR OPS Parts NCC and NCO lay down requirements for non-commercial operations, including requirements for non-commercial operations with complex motor-powered aircraft. citeturn1search0
+The CAAT Cover Regulation for TCAR Part NCC/NCO establishes the scope of the non-commercial operations regulatory set and states that TCAR OPS Parts NCC and NCO lay down requirements for non-commercial operations, including requirements for non-commercial operations with complex motor-powered aircraft. [Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
-The TCAR OPS Part-NCC document identifies itself as the regulation for **non-commercial operations with complex motor-powered aircraft**, states that `must`/`shall` indicates requirements imposed by the Director General, and states that TCAR OPS is based on the consolidated EU Regulation 965/2012 framework with specified amendments. citeturn1view0
+The TCAR OPS Part-NCC document identifies itself as the regulation for **non-commercial operations with complex motor-powered aircraft**, states that `must`/`shall` indicates requirements imposed by the Director General, and states that TCAR OPS is based on the consolidated EU Regulation 965/2012 framework with specified amendments. [Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 The resulting evidence chain is therefore:
 
@@ -150,7 +150,7 @@ Section 18/1 requires every aircraft operating in the Kingdom to prepare a fligh
 | `ROA.4015` Changes to a flight plan | Changes for IFR or controlled VFR flights must be reported as soon as practicable; significant changes for other VFR flights must also be reported as soon as practicable, subject to the provision's conditions. | Direct regulatory input; change-control procedure required |
 | `ROA.4020` Closing a flight plan | Establishes the flight-plan closing/arrival-report interface where required. Failure may cause disruption to ATS and unnecessary SAR action. | Direct regulatory input; closure/evidence control required |
 
-**Source evidence:** Current CAAT TCAR ANS Part-ROA, Section 4 Flight Plans, including `ROA.4001`, `ROA.4005`, `ROA.4006`, `ROA.4010`, `ROA.4015` and `ROA.4020`. CAAT AMC/GM further identifies the ATS reporting-office interface, flight-plan form/message models, AIP route-planning reference, acceptance workflow and arrival-report implications. citeturn4search5turn4search8
+**Source evidence:** Current CAAT TCAR ANS Part-ROA, Section 4 Flight Plans, including `ROA.4001`, `ROA.4005`, `ROA.4006`, `ROA.4010`, `ROA.4015` and `ROA.4020`. CAAT AMC/GM further identifies the ATS reporting-office interface, flight-plan form/message models, AIP route-planning reference, acceptance workflow and arrival-report implications. [Citation marker removed during governance cleanup — the original AI-tool citation encoding (hidden control characters + file/line reference) could not be reconciled to a repository-controlled source. This provision's source evidence should be re-verified and re-cited in plain text against the authoritative source records referenced by the repository before the next quality review.]
 
 ### 4.1 Requirement decomposition
 
