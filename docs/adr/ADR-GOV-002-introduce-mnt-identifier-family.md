@@ -2,7 +2,7 @@
 id: ADR-GOV-002
 title: Introduce the MNT Identifier Family for Maintenance Transformation Artifacts
 type: adr
-status: review
+status: approved
 version: 1.0.0
 domain: governance
 owner: TPAD Enterprise Transformation Team
@@ -17,13 +17,15 @@ related:
   - SEM-002
   - DOM-001
   - AB-2.0
+approved_by: Program Sponsor
+approved_date: 2026-09-13
 ---
 
 # ADR-GOV-002 — Introduce the MNT Identifier Family for Maintenance Transformation Artifacts
 
 ## Status
 
-Review — pending Program Sponsor approval. This ADR remains a proposal and does not itself create `MNT-001` or any other `MNT`-prefixed artifact.
+Approved — Program Sponsor approval recorded 2026-09-13.
 
 ## Context
 
@@ -35,17 +37,17 @@ The Enterprise Identifier Standard (`SEM-002`) states that new identifier famili
 
 This gap must be closed before any `MNT`-prefixed document is created, so that the artifact is not backfilled to match narrative that already exists — which was the original problem being remediated.
 
-## Decision (proposed)
+## Decision
 
 Introduce `MNT` as a governed identifier family for Maintenance Transformation artifacts, following the existing `<PREFIX>-<NNN>` pattern (consistent with `SEM-002`, e.g. `SEM-001`, `KB-001`, `DOM-001`, `REG-001`).
 
 Scope of the family:
 
 - `MNT-NNN` identifies controlled artifacts describing the Maintenance Transformation workstream: AS-IS discovery, regulatory-applicability cross-checks specific to maintenance, and — only after separate approval — target-state design.
-- `MNT-001` is reserved (not created) for the AS-IS Maintenance Operating Model discovery artifact already described in narrative form in the current checkpoint.
+- `MNT-001` is reserved for the AS-IS Maintenance Operating Model discovery artifact already described in narrative form in the current checkpoint.
 - The family does not, by itself, authorize any organizational, Post Holder, MOE/CAME, or target-state design content. That restriction remains in force regardless of this ADR's disposition.
 
-This ADR does not approve the content of `MNT-001`. A separate document, created only after this ADR is approved, would carry the actual AS-IS findings (F1–F7) currently recorded only in narrative form, with proper frontmatter and evidence tagging (E0–E4) as already specified in the checkpoint.
+This ADR does not approve the content of `MNT-001`. A separate document would carry the actual AS-IS findings (F1–F7) currently recorded only in narrative form, with proper frontmatter and evidence tagging (E0–E4) as already specified in the checkpoint.
 
 ## Consequences
 
@@ -57,14 +59,11 @@ This ADR does not approve the content of `MNT-001`. A separate document, created
 
 ### Constraints
 
-- Until this ADR is approved, no `MNT`-prefixed file should be created or referenced as an existing controlled artifact.
 - Approval of this ADR is not approval of `MNT-001`'s content; `MNT-001` still requires its own draft → review → approval cycle and must remain AS-IS discovery only — no target-state or organizational design.
 
-## Review Readiness
+## Approval Record
 
-The proposal is consistent with the repository's stated identifier-governance approach and with the separation between regulatory knowledge and maintenance current-state discovery. The requested governance dependency is explicit: `MNT-001` must not be created until this ADR is approved.
-
-No approval is implied by this readiness review. Under the Document Lifecycle Standard, the transition from `Review` to `Approved` requires Program Sponsor approval.
+The Program Sponsor approved this ADR on 2026-09-13. This approval authorizes introduction of the `MNT` identifier family as defined above. It does not approve `MNT-001` itself, which remains subject to its own document lifecycle and evidence review.
 
 ## Alternatives Considered
 
