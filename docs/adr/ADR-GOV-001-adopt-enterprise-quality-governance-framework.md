@@ -2,7 +2,7 @@
 id: ADR-GOV-001
 title: Adopt Enterprise Quality Governance Framework
 type: adr
-status: review
+status: approved
 version: 1.0.0
 domain: governance
 owner: TPAD Enterprise Transformation Team
@@ -12,13 +12,15 @@ tags:
   - adr
   - governance
   - quality
+approved_by: Program Sponsor
+approved_date: 2026-09-13
 ---
 
 # ADR-GOV-001 — Adopt Enterprise Quality Governance Framework
 
 ## Status
 
-Review — pending Program Sponsor approval.
+Approved — Program Sponsor approval recorded 2026-09-13.
 
 ## Context
 
@@ -53,11 +55,9 @@ The framework shall:
 - QG criteria and QR records add a proportionate review step before baselining or release.
 - Future changes to document types or metadata fields remain subject to existing ADR controls.
 
-## Review Readiness
+## Approval Record
 
-The ADR has been checked against the current repository governance framework. The proposed decision is internally consistent with the stated relationship between Quality Gates, Quality Reviews, document lifecycle approval, baselines, and releases. However, the referenced Quality Management Framework, Quality Policy, Quality Gate Register, Quality Review Standard, and Document Lifecycle Standard are themselves currently marked `draft`. This is a governance dependency that should be considered explicitly by the Program Sponsor before approval.
-
-No approval is implied by this readiness review. Under the Document Lifecycle Standard, the transition from `Review` to `Approved` requires Program Sponsor approval.
+The Program Sponsor approved this ADR on 2026-09-13. This approval authorizes adoption of the Enterprise Quality Governance framework as described in this ADR. It does not by itself approve the individual quality-governance artefacts referenced by the framework unless those artefacts complete their own applicable lifecycle approval.
 
 ## Alternatives Considered
 
