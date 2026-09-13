@@ -17,8 +17,7 @@ related:
   - SEM-002
   - DOM-001
   - AB-2.0
-approved_by: Program Sponsor
-approved_date: 2026-09-13
+approver: Program Sponsor
 ---
 
 # ADR-GOV-002 — Introduce the MNT Identifier Family for Maintenance Transformation Artifacts
@@ -63,7 +62,11 @@ This ADR does not approve the content of `MNT-001`. A separate document would ca
 
 ## Approval Record
 
-The Program Sponsor approved this ADR on 2026-09-13. This approval authorizes introduction of the `MNT` identifier family as defined above. It does not approve `MNT-001` itself, which remains subject to its own document lifecycle and evidence review.
+The Program Sponsor approved this ADR on 2026-09-13. The controlled metadata records the approver using the `approver` field defined by the Metadata Standard.
+
+**Authority identity evidence gap:** the repository currently establishes the approval role as `Program Sponsor`, but no controlled repository document reviewed for this remediation establishes the underlying person or formal appointment instrument for that role. This gap is recorded explicitly and must not be resolved by inference or by substituting a job title or personal identity without authoritative evidence.
+
+This approval authorizes introduction of the `MNT` identifier family as defined above. It does not approve `MNT-001` itself, which remains subject to its own document lifecycle and evidence review.
 
 ## Alternatives Considered
 
