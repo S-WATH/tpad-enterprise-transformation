@@ -8,9 +8,9 @@
 
 The **TPAD Enterprise Transformation Program** is the controlled enterprise-transformation program for the Police Aviation Division.
 
-The repository is operated as the program's **Enterprise Knowledge Repository** and **Repository Source of Truth** for architecture, governance, semantic models, regulatory analysis, knowledge management, transformation evidence, and controlled deliverables.
+This repository is the program's **Enterprise Knowledge Repository** and **Repository Source of Truth** for architecture, governance, semantic models, regulatory analysis, knowledge management, transformation evidence, and controlled deliverables.
 
-Core operating principles:
+Core principles:
 
 > **Repository-first · Standard-first · Semantic-first · Evidence-first · AI-ready by Design**
 
@@ -26,20 +26,20 @@ The program combines Enterprise Architecture, Systems Engineering, Regulatory Ar
 | Architecture Freeze | **ACTIVE** |
 | Current Phase | **Phase 3 — Enterprise Knowledge Implementation** |
 | Repository Source of Truth | **`main`** |
-| Current checkpoint | **`TPAD-CHECKPOINT-2026-09-12`** |
+| Current Checkpoint | **`TPAD-CHECKPOINT-2026-09-12`** |
 | Phase 2 | **Completed** |
 | WS-300 — Repository Bootstrap | **CLOSED** |
 | WS-310 — Controlled Baseline Synchronization | **CLOSED** |
 
-AB-2.0 remains the controlling architecture baseline. The architecture freeze remains active. A checkpoint records project state; it does **not** create a new architecture baseline or authorize architecture redesign.
+AB-2.0 remains the controlling architecture baseline. The architecture freeze remains active. A checkpoint records project state and handoff; it does **not** create a new architecture baseline or authorize architecture redesign.
 
-The current checkpoint also explicitly confirms that the project uses **date-based checkpoint identifiers**; no historical numeric checkpoint sequence is asserted. fileciteturn7file0
+The current checkpoint also establishes that the project uses **date-based checkpoint identifiers**; no historical numeric checkpoint sequence is asserted.
 
 ---
 
 ## 3. Current Phase 3 Position
 
-Phase 3 has moved from knowledge-foundation establishment into controlled regulatory-applicability analysis and maintenance transformation discovery.
+Phase 3 has progressed from knowledge-foundation establishment into controlled regulatory-applicability analysis and maintenance transformation discovery.
 
 ### Completed / Controlled
 
@@ -47,18 +47,18 @@ Phase 3 has moved from knowledge-foundation establishment into controlled regula
 - `DOM-001` — Enterprise Knowledge Domain Architecture — **APPROVED**
 - `REG-001` — Regulatory & Standards Knowledge Domain Baseline — **APPROVED v0.2.0**
 - `REG-PILOT-001` — quality review **PASS; pilot continuation authorized**
-- Phase 2 approved-artifact synchronization — completed
+- Phase 2 approved-artifact synchronization — **completed**
 - `WS-300` — Repository Bootstrap — **CLOSED**
 - `WS-310` — Controlled Baseline Synchronization — **CLOSED**
 
-### Current working streams
+### Current Working Streams
 
 - `REG-PILOT-002` — active regulatory-chain analysis for TPAD State/Police Aviation
 - `REG-KR-001` — draft regulatory knowledge record set
 - Maintenance transformation — current major controlled transformation workstream
 - `MNT-001` — draft AS-IS maintenance discovery artifact
 
-These statuses are based on the current controlled checkpoint. fileciteturn7file0
+The authoritative handoff for these statuses is `docs/governance/checkpoints/TPAD-CHECKPOINT-2026-09-12.md`.
 
 ---
 
@@ -66,7 +66,7 @@ These statuses are based on the current controlled checkpoint. filecitetur
 
 The following six semantic artifacts remain under controlled repository governance and remain **draft** unless their individual lifecycle evidence states otherwise:
 
-| Artifact | Purpose | Current lifecycle |
+| Artifact | Purpose | Current Lifecycle |
 |---|---|---|
 | `SEM-001` | Enterprise Semantic Principles | `draft` |
 | `SEM-002` | Enterprise Identifier Standard | `draft` |
@@ -75,7 +75,7 @@ The following six semantic artifacts remain under controlled repository governan
 | `OBJ-001` | Enterprise Object Model | `draft` |
 | `REL-001` | Enterprise Relationship Model | `draft` |
 
-The program maintains three separate concepts:
+Maintain the distinction:
 
 ```text
 Project Authority Approval
@@ -85,13 +85,13 @@ Repository Synchronization
 Document Lifecycle Promotion
 ```
 
-Do not infer lifecycle promotion merely because an artifact exists in the repository.
+An artifact being present in Git does not by itself mean that it is approved or released.
 
 ---
 
 ## 5. Enterprise Knowledge Domain Architecture
 
-`DOM-001` establishes the current semantic/business domain architecture:
+`DOM-001` establishes the current semantic/business domains:
 
 1. Governance & Strategy
 2. Regulatory & Standards
@@ -104,7 +104,7 @@ Do not infer lifecycle promotion merely because an artifact exists in the reposi
 
 > **Knowledge Domain ≠ Organization**
 
-The domain model is a semantic/business boundary and must not be used to infer an organizational structure, reporting line, post-holder model, or formal authority unless such authority is separately evidenced and approved.
+These domains are semantic/business boundaries. They must not be used to infer reporting lines, post-holder structures, formal authority, or organizational design unless separately evidenced and approved.
 
 ---
 
@@ -128,7 +128,7 @@ Internal TPAD Requirement
 Reference / Benchmark
 ```
 
-The standing comparative baseline is:
+The standing comparative model is:
 
 ```text
 Thai Authority
@@ -144,15 +144,15 @@ Comparative Analysis
 TPAD Strategic Decision
 ```
 
-EASA is a **strategic comparative regulatory baseline** unless and until an authoritative applicability basis establishes otherwise. It is not automatically a Thai legal obligation, a CAAT requirement, or a TPAD mandatory requirement.
+EASA is a **strategic comparative regulatory baseline** unless an authoritative applicability basis establishes otherwise. It is not automatically a Thai legal obligation, CAAT requirement, or TPAD mandatory requirement.
 
-The same principle applies to ICAO Annexes, civil aviation requirements, Part-145, CAMO, MOE, CAME, Part-M, and similar external frameworks: comparative or reference use does not by itself create a TPAD legal or organizational obligation.
+The same principle applies to ICAO Annexes, civil aviation requirements, Part-145, CAMO, MOE, CAME, Part-M, and similar external frameworks: reference or comparative use does not by itself create a TPAD legal or organizational obligation.
 
 ---
 
-## 7. Regulatory Knowledge Traceability Model
+## 7. Regulatory Knowledge Traceability
 
-Regulatory knowledge should be traceable through the following chain:
+Regulatory knowledge should be traceable through:
 
 ```text
 Authority
@@ -174,17 +174,15 @@ Evidence
 
 The current regulatory work has moved to **provision-level applicability analysis** rather than broad regulatory labeling.
 
-The controlling interpretation rules are:
+Mandatory interpretation rules:
 
 1. Do not assume civil aviation requirements automatically apply to TPAD State/Police Aviation.
-2. Do not assume use of a civil maintenance provider changes the legal status of the aircraft or automatically imports a civil regulatory regime.
+2. Use of a civil maintenance provider does not by itself change the legal status of the aircraft or import a civil regulatory regime.
 3. Do not treat Part-145, CAMO, MOE, CAME, EASA, Part-M, or similar concepts as statutory TPAD requirements without authoritative applicability evidence.
 4. Use provision-level evidence rather than broad regulatory labels.
-5. Distinguish an evidence gap from proven non-compliance.
-6. Exclusion from a civil regime does not mean the activity is unregulated.
-7. A parent legal instrument is not necessarily the complete operational rule set when subordinate instruments provide the detail.
-
-These rules are explicitly carried forward by the current checkpoint. fileciteturn7file0
+5. Evidence gap ≠ proven non-compliance.
+6. Exclusion from a civil regime ≠ unregulated activity.
+7. A parent legal instrument is not necessarily the complete operational rule set where subordinate instruments provide the detail.
 
 ---
 
@@ -206,7 +204,7 @@ Provision
 → Unresolved issue
 ```
 
-Priority areas include:
+Priority areas:
 
 1. Maintenance / airworthiness provisions
 2. Maintenance organisation / maintenance unit provisions
@@ -216,9 +214,9 @@ Priority areas include:
 6. Sections 18/1–18/3 and their exceptions
 7. Relevant subordinate regulatory instruments where the parent Act delegates or prescribes detail
 
-The current checkpoint records the Air Navigation Act as the primary legal source under examination and identifies **Section 5 as a critical applicability boundary**. The working position is therefore not that Police Aviation is completely outside the Act; applicability must be established provision by provision. fileciteturn7file0
+The current checkpoint identifies **Section 5 of the Air Navigation Act** as a critical applicability boundary. The working position is therefore not that Police Aviation is completely outside the Act; applicability must be established provision by provision.
 
-This matrix is an analysis/review deliverable. It is not, by itself, a legal opinion and does not authorize implementation.
+This matrix is an analysis/review deliverable. It is not a legal opinion and does not authorize implementation.
 
 ---
 
@@ -226,7 +224,7 @@ This matrix is an analysis/review deliverable. It is not, by itself, a legal opi
 
 Maintenance is currently the major transformation workstream.
 
-The required sequence is:
+Required sequence:
 
 ```text
 AS-IS Maintenance
@@ -252,14 +250,14 @@ Controlled Documents
 Records / Evidence / Assurance
 ```
 
-### 9.1 Current AS-IS findings
+### 9.1 Current Maintenance Execution
 
-The current-state evidence establishes two major maintenance execution modes:
+Current-state evidence establishes two major modes:
 
 1. **In-house maintenance** through the TPAD / Police Aviation aircraft maintenance group.
 2. **Outsourced maintenance** through Thai Airways under an annual contract, with aircraft groups managed through defined TPAD/Thai Airways coordination arrangements.
 
-For scheduled maintenance, the current pattern generally follows:
+Scheduled maintenance generally follows:
 
 ```text
 TPAD aircraft list / flight hours / schedule
@@ -273,24 +271,24 @@ Agreed maintenance timing
 
 For unscheduled defects, the current-state description indicates immediate correction where possible, followed by inspection and, where required, test flight and command authorization for return to operational use.
 
-### 9.2 Current information / records state
+### 9.2 Current Information / Records State
 
-The current-state material indicates that in-house maintenance remains predominantly document-centric, with the following gaps:
+The current-state material indicates that in-house maintenance remains predominantly document-centric:
 
 - no systematic Work Order / Work Sheet model in normal practice;
 - fragmented maintenance history and difficult retrieval;
-- risk of records becoming scattered when aircraft are stationed at flight units;
-- older paper records that are difficult to retrieve and may be lost over time;
-- technical manuals maintained mainly through manufacturer subscriptions;
-- parts requisition and parts history retained by maintenance but not yet systematic/easy to search;
-- defect reporting through official correspondence and aircraft logbook / aircraft record book entries;
+- records may become scattered when aircraft are stationed at flight units;
+- older paper records are difficult to retrieve and may be lost over time;
+- technical manuals are mainly maintained through manufacturer subscriptions;
+- parts requisition and parts history exist but are not yet systematic/easy to search;
+- defect reporting exists through official correspondence and aircraft logbook / aircraft record book entries;
 - no dedicated central defect-tracking system;
 - no systematic tracking for minor flyable defects;
 - no single real-time source of truth for fleet status.
 
-These observations are **current-state evidence**, not conclusions of regulatory non-compliance. fileciteturn7file0
+These are **current-state observations**, not conclusions of regulatory non-compliance.
 
-### 9.3 Current maintenance findings
+### 9.3 Current Maintenance Findings
 
 - **F1** — Dual Maintenance Execution Model
 - **F2** — Outsourced Maintenance Contract-Based Interface
@@ -310,7 +308,7 @@ These observations are **current-state evidence**, not conclusions of regulatory
 
 Purpose: evidence-based current-state discovery. It is **not** a target-state operating model and must not be treated as approved organizational design.
 
-Current scope:
+Scope:
 
 1. Current maintenance activities
 2. Internal vs outsourced maintenance
@@ -337,7 +335,7 @@ Interpretation rules:
 
 ## 11. Organization and Authority Boundary
 
-Possible functional structures, post-holder concepts, Accountable Manager / Quality / Maintenance arrangements, and MOE/CAME-related concepts that may have appeared during brainstorming remain **ideas / design inputs only** unless formally evidenced, reviewed, and approved.
+Possible functional structures, post-holder concepts, Accountable Manager / Quality / Maintenance arrangements, and MOE/CAME-related concepts remain **ideas / design inputs only** unless formally evidenced, reviewed, and approved.
 
 Do not:
 
@@ -346,7 +344,7 @@ Do not:
 - create MOE/CAME-type controlled documents at this stage;
 - define maintenance release authority before the applicable regulatory and internal authority basis is established.
 
-Maintain the distinction:
+Maintain:
 
 ```text
 Activity
@@ -362,7 +360,7 @@ Organizational Position
 
 ---
 
-## 12. Knowledge / Architecture / Governance Sequence
+## 12. Transformation and Governance Sequence
 
 The program uses a controlled sequence:
 
@@ -388,7 +386,7 @@ Controlled Design
 Implementation
 ```
 
-A second operating rule governs transformation delivery:
+Operationally:
 
 ```text
 Understand current state
@@ -406,18 +404,23 @@ Controlled design
 Implementation
 ```
 
-The program follows a **one-deliverable / approval-gate** model: related design questions may be visible, but controlled work proceeds through reviewable deliverables rather than uncontrolled parallel implementation.
+The program follows a **one-deliverable / approval-gate** model. Related design questions may be visible, but controlled work proceeds through reviewable deliverables rather than uncontrolled parallel implementation.
 
 ---
 
 ## 13. Repository Structure
 
-The repository is organized as a controlled knowledge system. The current tree includes, among other controlled areas:
+The repository is managed as a controlled knowledge system. The current tree includes:
 
 ```text
 /
 ├── README.md
 ├── bootstrap/
+│   ├── PROJECT-MANIFEST.yaml
+│   ├── CURRENT-STATE.md
+│   ├── ROADMAP.md
+│   ├── CHANGELOG.md
+│   └── ...
 ├── docs/
 │   ├── adr/
 │   ├── architecture/
@@ -428,15 +431,15 @@ The repository is organized as a controlled knowledge system. The current tree i
 └── ...
 ```
 
-Key governance areas include architecture, governance, document lifecycle, metadata, quality reviews, checkpoints, and baseline evidence.
+Key governance areas cover architecture, governance, document lifecycle, metadata, quality reviews, checkpoints, baseline evidence, and controlled repository configuration.
 
-The repository's controlled governance artifacts are the authoritative place to verify detailed lifecycle, metadata, quality-gate, and architecture-control rules.
+The detailed governance artifacts under `docs/governance/` remain authoritative for lifecycle, metadata, quality-gate, and architecture-control rules.
 
 ---
 
 ## 14. Quality, Approval, and Lifecycle
 
-The operating rule is:
+Operating rule:
 
 ```text
 Review
@@ -460,16 +463,16 @@ A draft artifact must not be treated as an approved standard merely because it i
 
 ## 15. AI Collaboration Model
 
-AI tools are used according to defined roles and project governance; they are not competing sources of project authority.
+AI tools are used according to defined roles and project governance. They are not competing sources of project authority.
 
-| AI Platform | Primary role |
+| AI Platform | Primary Role |
 |---|---|
 | ChatGPT | Enterprise Architecture Program Office; architecture, governance, evidence, and transformation review |
 | NotebookLM | Research and source-oriented analysis |
 | Claude | Technical and documentation assistance |
 | Codex | Repository engineering when available |
 
-AI output is subordinate to the controlled project evidence, approved architecture, governance rules, and authoritative source documents.
+AI output is subordinate to controlled project evidence, approved architecture, governance rules, and authoritative source documents.
 
 ---
 
@@ -495,11 +498,18 @@ Each source retains its own authority, provenance, and applicability. Comparativ
 
 The program uses **date-based checkpoints** as controlled state/handoff references.
 
-The current checkpoint is:
+Current checkpoint:
 
 `docs/governance/checkpoints/TPAD-CHECKPOINT-2026-09-12.md`
 
-A checkpoint is a controlled state record, not a new architecture baseline and not an approval of draft artifacts. The 2026-09-12 checkpoint explicitly records the date-based checkpoint convention and directs the next session to continue from repository `main` rather than restart the program from a blank state. fileciteturn7file0
+The current checkpoint records that:
+
+- AB-2.0 remains active;
+- the architecture freeze remains active;
+- Phase 3 is current;
+- maintenance AS-IS discovery has been established;
+- regulatory work has moved to provision-level applicability analysis;
+- the immediate next controlled deliverable is the Regulatory Applicability — Provision-Level Evidence Matrix.
 
 For cross-session work:
 
@@ -507,7 +517,7 @@ For cross-session work:
 2. Read this `README.md`.
 3. Read the relevant governance artifacts referenced by the checkpoint.
 4. Continue from the current controlled workstream.
-5. Do not silently reconstruct or redesign the program from memory.
+5. Do not reconstruct or redesign the program from a blank state.
 
 ---
 
@@ -565,7 +575,7 @@ NEXT CONTROLLED DELIVERABLE
 
 ## 20. Getting Started
 
-For any project participant or collaborating AI/system:
+For project participants and collaborating AI/system agents:
 
 1. Read `README.md` to establish the current project position.
 2. Read `docs/governance/checkpoints/TPAD-CHECKPOINT-2026-09-12.md` for the latest controlled handoff state.
@@ -574,7 +584,7 @@ For any project participant or collaborating AI/system:
 5. Work on one reviewable deliverable at a time.
 6. Obtain approval before controlled implementation or lifecycle promotion.
 
-Do not restart the program from a blank state.
+**Do not restart the program from a blank state.**
 
 ---
 
