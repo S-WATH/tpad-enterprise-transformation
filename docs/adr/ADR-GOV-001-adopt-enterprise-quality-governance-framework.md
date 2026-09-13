@@ -2,12 +2,12 @@
 id: ADR-GOV-001
 title: Adopt Enterprise Quality Governance Framework
 type: adr
-status: draft
+status: review
 version: 1.0.0
 domain: governance
 owner: TPAD Enterprise Transformation Team
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-09-13
 tags:
   - adr
   - governance
@@ -18,7 +18,7 @@ tags:
 
 ## Status
 
-Draft
+Review — pending Program Sponsor approval.
 
 ## Context
 
@@ -52,6 +52,12 @@ The framework shall:
 - Authors, reviewers, and the Repository Maintainer must retain quality evidence with the associated work.
 - QG criteria and QR records add a proportionate review step before baselining or release.
 - Future changes to document types or metadata fields remain subject to existing ADR controls.
+
+## Review Readiness
+
+The ADR has been checked against the current repository governance framework. The proposed decision is internally consistent with the stated relationship between Quality Gates, Quality Reviews, document lifecycle approval, baselines, and releases. However, the referenced Quality Management Framework, Quality Policy, Quality Gate Register, Quality Review Standard, and Document Lifecycle Standard are themselves currently marked `draft`. This is a governance dependency that should be considered explicitly by the Program Sponsor before approval.
+
+No approval is implied by this readiness review. Under the Document Lifecycle Standard, the transition from `Review` to `Approved` requires Program Sponsor approval.
 
 ## Alternatives Considered
 
