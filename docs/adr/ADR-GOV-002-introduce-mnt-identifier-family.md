@@ -2,7 +2,7 @@
 id: ADR-GOV-002
 title: Introduce the MNT Identifier Family for Maintenance Transformation Artifacts
 type: adr
-status: draft
+status: review
 version: 1.0.0
 domain: governance
 owner: TPAD Enterprise Transformation Team
@@ -23,7 +23,7 @@ related:
 
 ## Status
 
-Draft — not approved. This ADR is a proposal only. It does not itself create `MNT-001` or any other `MNT`-prefixed artifact.
+Review — pending Program Sponsor approval. This ADR remains a proposal and does not itself create `MNT-001` or any other `MNT`-prefixed artifact.
 
 ## Context
 
@@ -43,7 +43,7 @@ Scope of the family:
 
 - `MNT-NNN` identifies controlled artifacts describing the Maintenance Transformation workstream: AS-IS discovery, regulatory-applicability cross-checks specific to maintenance, and — only after separate approval — target-state design.
 - `MNT-001` is reserved (not created) for the AS-IS Maintenance Operating Model discovery artifact already described in narrative form in the current checkpoint.
-- The family does not, by itself, authorize any organizational, Post Holder, MOE/CAME, or target-state design content. That restriction (Section 8 / Section 11 of the checkpoints and README) remains in force regardless of this ADR's disposition.
+- The family does not, by itself, authorize any organizational, Post Holder, MOE/CAME, or target-state design content. That restriction remains in force regardless of this ADR's disposition.
 
 This ADR does not approve the content of `MNT-001`. A separate document, created only after this ADR is approved, would carry the actual AS-IS findings (F1–F7) currently recorded only in narrative form, with proper frontmatter and evidence tagging (E0–E4) as already specified in the checkpoint.
 
@@ -58,7 +58,13 @@ This ADR does not approve the content of `MNT-001`. A separate document, created
 ### Constraints
 
 - Until this ADR is approved, no `MNT`-prefixed file should be created or referenced as an existing controlled artifact.
-- Approval of this ADR is not approval of `MNT-001`'s content; `MNT-001` still requires its own draft → review → approval cycle and, per the checkpoints, must remain AS-IS discovery only — no target-state or organizational design.
+- Approval of this ADR is not approval of `MNT-001`'s content; `MNT-001` still requires its own draft → review → approval cycle and must remain AS-IS discovery only — no target-state or organizational design.
+
+## Review Readiness
+
+The proposal is consistent with the repository's stated identifier-governance approach and with the separation between regulatory knowledge and maintenance current-state discovery. The requested governance dependency is explicit: `MNT-001` must not be created until this ADR is approved.
+
+No approval is implied by this readiness review. Under the Document Lifecycle Standard, the transition from `Review` to `Approved` requires Program Sponsor approval.
 
 ## Alternatives Considered
 
