@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Governance Approval & Metadata Remediation — 2026-09-13
+
+### Completed
+
+- Program Sponsor approval recorded for `ADR-GOV-001` — Adopt Enterprise Quality Governance Framework.
+- Program Sponsor approval recorded for `ADR-GOV-002` — Introduce the MNT Identifier Family for Maintenance Transformation Artifacts.
+- Corrected both ADR frontmatter records to use the Metadata Standard's `approver` field; non-standard `approved_by` and `approved_date` fields were removed.
+- Recorded an explicit governance evidence gap: the repository currently establishes `Program Sponsor` as the approval role but does not establish the underlying person or formal appointment instrument for that role. No identity was inferred or substituted.
+- `MNT-001` remains uncreated. Approval of `ADR-GOV-002` authorizes the `MNT` identifier family only; `MNT-001` requires its own Draft → Review → Approved lifecycle.
+
+### Control Notes
+
+- Approval decisions were retained; the remediation did not invent a historical `Review` status in the repository.
+- This remediation did not redesign AB-2.0, did not alter the Architecture Freeze, and did not promote `MNT-001` or any other operational artifact.
+
 ## Governance Hygiene Remediation — 2026-09-13
 
 ### Completed
@@ -11,13 +26,7 @@
 ### Control Notes
 
 - This remediation did not redesign AB-2.0, did not alter the Architecture Freeze, and did not promote the lifecycle status of any other artifact.
-- `MNT-001` was **not** created as part of this remediation. It remains a narrative reference in `README.md` and the checkpoints only, pending resolution of the `MNT` identifier-family governance gap (see below).
-
-## Open Governance Item — MNT Identifier Family
-
-- `MNT-001` is referenced by name in `README.md` and in both checkpoints with an implied status of "Draft," but no corresponding controlled artifact file exists in the repository.
-- The `MNT` identifier family has not been introduced through governance (no ADR); per the Enterprise Identifier Standard, new identifier families require an applicable governance action before use.
-- Until this is resolved, `MNT-001` should not be treated as an approved or existing controlled artifact, and no further content should cite it as if it were one.
+- `MNT-001` was **not** created as part of this remediation. It remained a narrative reference pending resolution of the `MNT` identifier-family governance gap; that gap is now resolved by approved `ADR-GOV-002`.
 
 ## Phase 3 — Enterprise Knowledge Implementation
 
@@ -28,12 +37,14 @@
 - `REG-001` — Regulatory & Standards Knowledge Domain Baseline — Approved v0.2.0.
 - `REG-PILOT-001` — quality review PASS / pilot continuation authorized.
 - Checkpoints `TPAD-CHECKPOINT-2026-09-08` and `TPAD-CHECKPOINT-2026-09-12` recorded as controlled state/handoff references.
+- `ADR-GOV-001` — Approved.
+- `ADR-GOV-002` — Approved; `MNT` identifier family is now governed.
 
 ### Active
 
 - `REG-PILOT-002` — TPAD State/Police Aviation regulatory-chain analysis (Section 5 boundary, Section 16/1 Journey Log applicability).
 - `REG-KR-001` — draft regulatory knowledge record set.
-- Maintenance transformation workstream — AS-IS discovery in narrative form (findings F1–F7); not yet captured as a controlled artifact (see Open Governance Item above).
+- Maintenance transformation workstream — AS-IS discovery in narrative form (findings F1–F7); `MNT-001` not yet captured as a controlled artifact.
 
 ### Control Notes
 
