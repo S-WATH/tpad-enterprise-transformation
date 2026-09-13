@@ -12,8 +12,7 @@ tags:
   - adr
   - governance
   - quality
-approved_by: Program Sponsor
-approved_date: 2026-09-13
+approver: Program Sponsor
 ---
 
 # ADR-GOV-001 — Adopt Enterprise Quality Governance Framework
@@ -57,7 +56,11 @@ The framework shall:
 
 ## Approval Record
 
-The Program Sponsor approved this ADR on 2026-09-13. This approval authorizes adoption of the Enterprise Quality Governance framework as described in this ADR. It does not by itself approve the individual quality-governance artefacts referenced by the framework unless those artefacts complete their own applicable lifecycle approval.
+The Program Sponsor approved this ADR on 2026-09-13. The controlled metadata records the approver using the `approver` field defined by the Metadata Standard.
+
+**Authority identity evidence gap:** the repository currently establishes the approval role as `Program Sponsor`, but no controlled repository document reviewed for this remediation establishes the underlying person or formal appointment instrument for that role. This gap is recorded explicitly and must not be resolved by inference or by substituting a job title or personal identity without authoritative evidence.
+
+This approval authorizes adoption of the Enterprise Quality Governance framework as described in this ADR. It does not by itself approve the individual quality-governance artefacts referenced by the framework unless those artefacts complete their own applicable lifecycle approval.
 
 ## Alternatives Considered
 
