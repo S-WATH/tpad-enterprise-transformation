@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## Governance Remediation & Process Observation — 2026-09-14
+
+### Completed
+
+- Corrected `MNT-001` frontmatter from the invalid `type: operational` / `domain: capability` combination to the controlled vocabulary pattern `type: information` / `domain: airworthiness-and-maintenance`, matching the Knowledge Domain naming pattern established by `DOM-001`.
+- No substantive content, identifier, lifecycle status, evidence classification, or AS-IS findings in `MNT-001` were changed by this remediation.
+
+### Governance Observations
+
+- `docs/maintenance/` is a newly introduced domain-specific repository folder. `DOM-001` defines knowledge domains but does not define repository folder structure; therefore no direct structural prohibition is established. The folder-placement consistency/rationale remains an explicit repository-governance observation and is not silently normalized by this remediation.
+- `MNT-001` and `REG-PILOT-003` were created in the same controlled work cycle without an intermediate checkpoint or review gate between the two deliverables. This is recorded as a process deviation from the repository's one-deliverable / approval-gate operating model.
+- No retroactive checkpoint has been fabricated to reconstruct the sequence. The historical state is retained as observed.
+- The two artifacts remain independently lifecycle-controlled. No new regulatory deliverable will be started while these Draft artifacts remain unreviewed, unless a separately recorded governance decision explicitly authorizes temporary overlapping open Drafts.
+
 ## REG-PILOT-003 Provision-Level Regulatory Applicability Matrix — 2026-09-14
 
 ### Completed
@@ -26,7 +40,7 @@
 - Established E0–E4 evidence classification and recorded current-state findings F1–F7 as E1 pending documentary/cross-validation.
 - Recorded evidence gaps and separated current-state observations from regulatory applicability and target-state design.
 
-### Governance Approval & Metadata Remediation — 2026-09-13
+## Governance Approval & Metadata Remediation — 2026-09-13
 
 ### Completed
 
