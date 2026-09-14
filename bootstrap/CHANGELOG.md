@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## REG-PILOT-003 Provision-Level Regulatory Applicability Matrix — 2026-09-14
+
+### Completed
+
+- Created `REG-PILOT-003` — Regulatory Applicability — Provision-Level Evidence Matrix as a controlled `draft` regulatory-information artifact.
+- Applied provision-level analysis rather than broad civil-aviation labels, with explicit distinction between direct applicability, civil-regime non-applicability, unresolved applicability, and comparative baseline use.
+- Confirmed the statutory State/Police Aviation boundary in Air Navigation Act Section 5 and the retained Section 18/1–18/3 flight-plan/rules-of-air pathway.
+- Assessed maintenance/airworthiness provisions (§§41/77–41/104) as civil-regime provisions that must not be treated as confirmed TPAD Police Aviation obligations without a separate State/Police applicability basis.
+- Linked the regulatory analysis to `MNT-001` findings F1–F7 without converting evidence/control gaps into findings of legal non-compliance.
+- Recorded the next discovery requirement: identify the separate State/Police Aviation maintenance, airworthiness, records, defect, parts and release-authority regime.
+
+### Control Notes
+
+- `REG-PILOT-003` is an applicability/evidence analysis, not a legal opinion and not an implementation authorization.
+- No Part-145, CAMO, MOE, CAME, Part-M or other civil maintenance concept has been declared a statutory TPAD requirement.
+- No maintenance authority, post-holder authority, delegation or identity has been inferred from job titles or organisational labels.
+
 ## MNT-001 AS-IS Discovery Draft — 2026-09-14
 
 ### Completed
@@ -46,6 +63,7 @@
 ### Active
 
 - `REG-PILOT-002` — TPAD State/Police Aviation regulatory-chain analysis (Section 5 boundary, Section 16/1 Journey Log applicability).
+- `REG-PILOT-003` — draft provision-level regulatory applicability matrix.
 - `REG-KR-001` — draft regulatory knowledge record set.
 - `MNT-001` — draft AS-IS maintenance discovery artifact.
 
