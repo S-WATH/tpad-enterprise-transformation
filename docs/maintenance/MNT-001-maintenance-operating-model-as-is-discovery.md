@@ -1,8 +1,8 @@
 ---
 id: MNT-001
 title: Maintenance Operating Model — AS-IS Discovery
-type: operational
-domain: capability
+type: information
+domain: airworthiness-and-maintenance
 status: draft
 version: 0.1.0
 owner: TPAD Enterprise Transformation Team
