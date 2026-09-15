@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## Checkpoint & State Synchronization — 2026-09-15
+
+### Completed
+
+- Created `TPAD-CHECKPOINT-2026-09-15` as the current controlled state and cross-session handoff record.
+- Synchronized `bootstrap/CURRENT-STATE.md` to the 2026-09-15 checkpoint and current Phase 3 position.
+- Synchronized `bootstrap/PROJECT-MANIFEST.yaml` to the current architecture baseline, phase, workstreams, quality-review state, and immediate focus.
+- Preserved `MNT-001`, `REG-PILOT-003`, and `REG-KR-001` as Draft; no lifecycle promotion was performed.
+- Recorded the latest verified pre-checkpoint commit as `724a9dd04ae9a80791c73602da11dda22077acf1`.
+
+### Control Notes
+
+- AB-2.0 and the Architecture Freeze remain unchanged.
+- This synchronization does not approve or release any Draft artifact.
+- The checkpoint is a state/handoff record, not a new architecture baseline.
+- No retroactive checkpoint was created for the 2026-09-14 MNT/REG work cycle.
+- The manifest was updated because its previous values reflected an older project state and could not be allowed to override later controlled evidence.
+
 ## Governance Remediation & Process Observation — 2026-09-14
 
 ### Completed
