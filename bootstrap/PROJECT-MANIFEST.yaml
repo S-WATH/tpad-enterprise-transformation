@@ -1,38 +1,65 @@
 project:
   id: TPAD
   name: TPAD Enterprise Transformation Program
-  checkpoint: CP-004
-  baseline: BR-1.0
-  phase: Enterprise Engineering
-
-foundation:
-  - PC-001
-  - EA-001
-  - EA-002
-  - EA-003
-  - STD-001
-  - REG-001
+  checkpoint: TPAD-CHECKPOINT-2026-09-15
+  baseline: AB-2.0
+  phase: Phase 3 — Enterprise Knowledge Implementation
 
 repository:
   strategy: repository-first
-  source_of_truth: Enterprise Knowledge Repository
+  source_of_truth: main
+
+architecture:
+  baseline: AB-2.0
+  freeze: active
+
+workstreams:
+  WS-300:
+    status: closed
+    name: Repository Bootstrap
+  WS-310:
+    status: closed
+    name: Controlled Baseline Synchronization
+  REG-PILOT-002:
+    status: active
+    name: TPAD State/Police Aviation regulatory-chain analysis
+  MNT-001:
+    status: draft
+    name: Maintenance Operating Model — AS-IS Discovery
+  REG-PILOT-003:
+    status: draft
+    name: Regulatory Applicability — Provision-Level Evidence Matrix
+  REG-KR-001:
+    status: draft
+    name: Regulatory Knowledge Record Set
+
+approved_foundation:
+  - KB-001
+  - DOM-001
+  - REG-001
+  - ADR-GOV-001
+  - ADR-GOV-002
 
 quality_governance:
   framework: GOV-QMF-001
   gate_register: docs/governance/quality/QUALITY-GATE-REGISTER.md
+  review_standard: docs/governance/quality/QUALITY-REVIEW-STANDARD.md
   release_gate: QG-004
+  latest_reviews:
+    - QR-MNT-001
+    - QR-REG-PILOT-003
 
-current_sprint:
-  id: WS-001
-  name: Enterprise Semantic Foundation
-
-deliverables:
-  - GLO-001 Enterprise Glossary v0.1
+current_focus:
+  primary: REG-PILOT-003
+  secondary: MNT-001
+  objective: Advance provision-level regulatory applicability analysis toward Review before controlled maintenance target-state design.
 
 rules:
-  - standard-first
   - repository-first
-  - value-first
-  - minimal-foundation
-  - no-document-without-object
-  - no-object-without-business-value
+  - standard-first
+  - semantic-first
+  - evidence-first
+  - one-deliverable-at-a-time
+  - evidence-gap-is-not-non-compliance
+  - civil-aviation-applicability-must-be-tested
+  - no-implementation-before-approved-design
